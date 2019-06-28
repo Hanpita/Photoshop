@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<script>
+	//设置字体大小
+	function setFont(size){
+		var obj=document.getElementById("strong");
+		obj.style.height=size*height;
+		//obj.style.color="#ff0000"
+	}
+	//设置图片大小
+	function setImg(size){
+		//var obj=document.getElementById("strong");
+		obj.style.fontSize=size;
+		obj.style.color="#ff0000"
+	}
+</script>
+<style type="text/css">
+	*{padding:0; margin:0}
+	body{
+		//background-color:rgb(69, 0, 183);
+		background-color:white;
+	}
+	.food{                           /*最大的div*/
+		/*width:1000px;*/
+		height:1000px;
+		margin-top:80px;
+		margin-left:80px;
+		margin-right:80px;
+		//background-color:royalblue;
+		background-color:white;
+		//background-color:rgb(69, 0, 183);
+	}
+	.food ul li{                     
+		float:left;
+		list-style-type: none;
+	}
+	#over{
+		margin-left: -100px;
+		margin-top: 400px;
+	}
+	.album{                     /*图片*/
+		float: left;
+		overflow:hidden;
+		transition:width 2s, height 2s;
+	-moz-transition:width 1s, height 1s, -moz-transform 1s; /* Firefox 4 */
+	-webkit-transition:width 1s, height 1s, -webkit-transform 1s; /* Safari and Chrome */
+	-o-transition:width 1s, height 1s, -o-transform 1s; /* Opera */
+	}
+	.album img:hover{               /*图片放大*/
+	transform:scale(1.1);
+            -webkit-transform:scale(1.1);
+            -moz-transform:scale(1.1);
+            -o-transform:scale(1.1);
+            -ms-transform:scale(1.1);
+	}
+	#nav{                          /*按钮*/
+		position:absolute;
+		z-index: 999;
+		margin-left:900px;
+		padding-top:300px;
+	}
+	#nav ul li{
+	width: 200px;
+	float: inherit;
+	list-style-type: none;
+	//background-color: azure;
+	//color:rgba(114,0,1,1.00);
+	
+	background-color: rgba(114,0,1,1.00);
+	
+	text-align: center;
+	margin-top: 30px;
+	
+		/*鼠标放上时背景变化时间*/
+	transition:background-color 1.5s linear;
+	-webkit-transition:background-color 1.5s  linear;
+	-moz-transition:background-color 1.5s  linear;
+	-o-transition:background-color 1.5s  linear;
+	}
+	
+	/*菜单栏显示样式*/ 
+	#nav>ul>li>a       /*栏目链接样式*/
+	{
+		font-size:20px;
+		line-height:40px;
+		font-weight: bolder;
+		font-family: Helvetica Regular,sans-serif;
+		text-decoration: none;
+		//color:rgba(114,0,1,1.00);
+		color:white;
+	}
+	
+	#nav>ul>li:hover  /*鼠标经过变色*/
+	{
+		//background-color:rgb(69, 0, 183);
+		background-color:black;
+	
+	}
+	.title1{
+		/*margin-top:20px;
+		margin-left:400px;*/
+		font-family: Helvetica Regular,sans-serif;
+		color: rgba(114,0,1,1.00);
+		font-size:3rem;
+		word-spacing:2rem;
+		line-height:5.1rem;
+		font-weight: bold;
+	}
+	#t1{
+		position:absolute;
+		right:300px;
+		top:150px;
+	}
+</style>
+</head>
+
+<body style="overflow-x:hidden;overflow-y:hidden">
+	<!--<img  src="image/DSC00606.png"  alt=""/>
+	<body style="overflow-x:hidden">
+    没有垂直滚动条
+    <body style="overflow-y:hidden">
+    没有滚动条
+    <body style="overflow-x:hidden;overflow-y:hidden">或<body
+    style="overflow:hidden">
+-->
+	<div class="food">	 
+	<ul>
+			<li class="album"><img border="10" height="700" alt="" src="image/DSC00611.png" onmouseover="this.src='image/3.jpg'" onmouseout="this.src='image/DSC00611.png'"/></a></li>
+			<li class="album" id="over">
+			<img  border="10" height="270" alt=""src="image/DSC00606.png"/></a></li>
+			
+		</ul>
+		<p class="title1" id="t1">Photoshop基本后期调色</p>
+   
+<div id="nav">
+	<ul>
+		<li><a href="index.html">构图</a>
+		</li>
+		<li><a href="JAPAN.html">调色</a>
+		</li>
+		<li><a href="zhoushan.html">测试</a>
+		</li>
+	</ul>
+</div>
+ </div>
+</body>
+</html>
