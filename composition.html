@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>构图方法</title>
+<link rel="stylesheet" href="css/composition.css">
+	<style type="text/css">
+	*{padding:0; margin:0}
+	body{
+		//background-color:rgb(69, 0, 183);
+		background-color:white;
+		background-image:url(image/1.png);
+		
+		
+	}
+	.whole{                           /*最大的div*/
+		width:1024px;
+		height:768px;
+		margin: auto;
+		//background-color:black;
+	}
+	.album{                     /*图片*/
+		float: left;
+		overflow:hidden;
+		transition:width 2s, height 2s;
+	-moz-transition:width 1s, height 1s, -moz-transform 1s; /* Firefox 4 */
+	-webkit-transition:width 1s, height 1s, -webkit-transform 1s; /* Safari and Chrome */
+	-o-transition:width 1s, height 1s, -o-transform 1s; /* Opera */
+	}
+	a:link{
+		color: black;
+	}
+	.album img:hover{ 
+		border-color: black;
+		position: relative;
+		z-index: 999;
+		/*图片放大*/
+	transform:scale(1.1);
+            -webkit-transform:scale(1.1);
+            -moz-transform:scale(1.1);
+            -o-transform:scale(1.1);
+            -ms-transform:scale(1.1);
+	}
+	
+	#over1{
+		position:absolute;
+		margin-left:450px;
+		margin-top:30px;
+		
+	}
+	#over2{
+		position:absolute;
+		margin-left:600px;
+		margin-top:400px;
+	}
+	#over3{
+		position:absolute;
+		margin-left:350px;
+		margin-top:300px;
+	}
+</style>
+</head>
+
+<body style="overflow-x:hidden;overflow-y:hidden">
+<div class="nav">
+	<div class="link1"><a href="" style="font-weight: bold;">构图</a>
+			<ul>
+			<li><a href="">裁剪工具</a></li>
+			<li><a href="">构图方法</a></li>
+			<li><a href="structure-test.html">构图练习</a></li>
+			</ul>
+	</div>
+	<div class="link2"><a href="" style="font-weight: bold;">调色</a>
+			<ul>
+			<li><a href="colourstyle.html">色调类型</a></li>
+			<li><a href="">调色练习</a></li>
+			</ul>
+	</div>
+	<div class="link3"><a href="" style="font-weight: bold;">测试</a>
+			<ul>
+			<li><a href="">理论选择题</a></li>
+			<li><a href="">综合运用</a></li>
+			</ul>
+	</div>
+</div>
+	
+<div class="whole">	 
+	<ul>
+		<li class="album"><a href=" "><img border="10"  alt="" src="image/composition/03.jpg" onmouseout="this.src='image/composition/3.jpg'" onmouseover="this.src='image/composition/03.jpg" /></a></li>
+		<li class="album" id="over1">
+			<a href=" "><img  border="10" width="517px" alt="" src="image/composition/01.jpg" onmouseout="this.src='image/composition/1.jpg'" onmouseover="this.src='image/composition/01.jpg" /></a></li>
+			<li class="album" id="over3">
+			<a href=" "><img  border="10" width="287px" alt="" src="image/composition/04.jpg" onmouseout="this.src='image/composition/004.jpg'" onmouseover="this.src='image/composition/04.jpg" /></a></li>
+		<li class="album" id="over2">
+			<a href=" "><img  border="10" height="270" alt="" src="image/composition/02.jpg" onmouseout="this.src='image/composition/2.jpg'" onmouseover="this.src='image/composition/02.jpg" /></a></li>
+	</ul>
+	</div>
+	<script>
+var aa=document.getElementById("aaa");
+var bb=aa.attributes["href"].value;
+aa.title=bb;   
+</script>
+</body>
+
+</html>

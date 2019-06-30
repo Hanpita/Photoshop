@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>index</title>
+<title>Photoshop基本后期调色</title>
 <script>
 	//设置字体大小
 	function setFont(size){
@@ -10,36 +10,29 @@
 		obj.style.height=size*height;
 		//obj.style.color="#ff0000"
 	}
-	//设置图片大小
-	function setImg(size){
-		//var obj=document.getElementById("strong");
-		obj.style.fontSize=size;
-		obj.style.color="#ff0000"
-	}
 </script>
 <style type="text/css">
 	*{padding:0; margin:0}
 	body{
 		//background-color:rgb(69, 0, 183);
-		background-color:white;
+		background-color:black;
 	}
 	.food{                           /*最大的div*/
 		/*width:1000px;*/
-		height:1000px;
-		margin-top:80px;
-		margin-left:80px;
-		margin-right:80px;
-		//background-color:royalblue;
-		background-color:white;
+		width:1024px;
+		height:768px;
+		margin: auto;
+		
+		//margin-top:80px;
+		//margin-left:80px;
+		//margin-right:80px;
+		background-color:black;
+		//background-color:white;
 		//background-color:rgb(69, 0, 183);
 	}
 	.food ul li{                     
 		float:left;
 		list-style-type: none;
-	}
-	#over{
-		margin-left: -100px;
-		margin-top: 400px;
 	}
 	.album{                     /*图片*/
 		float: left;
@@ -49,7 +42,9 @@
 	-webkit-transition:width 1s, height 1s, -webkit-transform 1s; /* Safari and Chrome */
 	-o-transition:width 1s, height 1s, -o-transform 1s; /* Opera */
 	}
-	.album img:hover{               /*图片放大*/
+	.album img:hover{    
+		z-index: 999;
+		/*图片放大*/
 	transform:scale(1.1);
             -webkit-transform:scale(1.1);
             -moz-transform:scale(1.1);
@@ -59,37 +54,38 @@
 	#nav{                          /*按钮*/
 		position:absolute;
 		z-index: 999;
-		margin-left:900px;
-		padding-top:300px;
+		margin-left:750px;
+		padding-top:350px;
 	}
 	#nav ul li{
 	width: 200px;
 	float: inherit;
 	list-style-type: none;
-	//background-color: azure;
-	//color:rgba(114,0,1,1.00);
+	//color:#912427;
 	
-	background-color: rgba(114,0,1,1.00);
+	background-color:rgba(116,21,22,1.00);
 	
 	text-align: center;
 	margin-top: 30px;
 	
 		/*鼠标放上时背景变化时间*/
-	transition:background-color 1.5s linear;
-	-webkit-transition:background-color 1.5s  linear;
-	-moz-transition:background-color 1.5s  linear;
-	-o-transition:background-color 1.5s  linear;
+	transition:background-color 1s linear;
+	-webkit-transition:background-color 1s  linear;
+	-moz-transition:background-color 1s  linear;
+	-o-transition:background-color 1s  linear;
 	}
 	
 	/*菜单栏显示样式*/ 
 	#nav>ul>li>a       /*栏目链接样式*/
 	{
-		font-size:20px;
+		font-size:26px;
 		line-height:40px;
 		font-weight: bolder;
-		font-family: Helvetica Regular,sans-serif;
+		font-family:STXingkai;
+		word-spacing:1.2rem;
+		font-weight:lighter;
+		
 		text-decoration: none;
-		//color:rgba(114,0,1,1.00);
 		color:white;
 	}
 	
@@ -102,46 +98,177 @@
 	.title1{
 		/*margin-top:20px;
 		margin-left:400px;*/
+		
 		font-family: Helvetica Regular,sans-serif;
-		color: rgba(114,0,1,1.00);
-		font-size:3rem;
-		word-spacing:2rem;
-		line-height:5.1rem;
-		font-weight: bold;
+        //word-spacing:2.5rem;
+        line-height:4rem;
+        font-weight: bold;
+		//color: rgba(114,0,1,1.00);
+		color:white;
+		font-size:4.5rem;
 	}
 	#t1{
 		position:absolute;
-		right:300px;
-		top:150px;
+		margin-left:600px;
+		top:120px;
 	}
+	
+/*************************************
+Build the scene and rotate on hover
+**************************************/	
+.wrapper {
+	position: absolute;
+	margin-left:400px;
+	margin-top:300px;
+}
+.stage {
+	list-style: none;
+	padding: 0;
+}
+.scene {
+	//background-color: aqua;
+	width:300px;
+	height:420px;
+	margin: 30px;
+	float: left;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	perspective: 1000px;
+}
+
+.movie {
+	width: 460px;
+	height:700px;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translateZ(-130px);
+	-moz-transform: translateZ(-130px);
+	transform: translateZ(-130px);
+	-webkit-transition: -webkit-transform 350ms;
+	-moz-transition: -moz-transform 350ms;
+	transition: transform 350ms;
+}
+
+.movie:hover {
+	-webkit-transform: rotateY(-78deg) translateZ(20px);
+	-moz-transform: rotateY(-78deg) translateZ(20px);
+	transform: rotateY(-78deg) translateZ(20px);
+}
+
+/*************************************
+Transform and style the two planes
+**************************************/
+
+.movie .poster, 
+.movie .info {
+	position: absolute;
+	width: 250px;
+	height:350px;
+	background-color: #fff;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	
+	-webkit-transform: rotateY(90deg) translateZ(130px);
+	-moz-transform: rotateY(90deg) translateZ(130px);
+	transform: rotateY(90deg) translateZ(130px);
+	border: 1px solid #B8B5B5;
+	font-size: 0.75em;
+}
+.movie .poster  {
+	-webkit-transform: translateZ(130px);
+	-moz-transform: translateZ(130px);
+	transform: translateZ(130px);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.info header {
+	color: #FFF;
+	padding: 7px 10px;
+	font-weight: bold;
+	height: 195px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-shadow: 0px 1px 1px rgba(0,0,0,1);
+}
+.info header h1 {
+	margin: 0 0 2px;
+	font-size: 1.4em;
+}
+
+.info header .rating {
+	border: 1px solid #FFF;
+	padding: 0px 3px;
+}
+
+.info p {
+	//padding: 1.2em 1.4em;
+	//margin: 2px 0 0;
+	font-weight: 700;
+	color: #666;
+	line-height: 1.4em;
+	border-top: 10px solid #555;
+}
+.scene:nth-child(1) .movie .poster {
+  background-image: url(image/4.jpg);
+	border-color: black;
+	border-width: 20px;
+	border-right: 20px;
+	border-bottom:20px;
+}
+
+.scene:nth-child(1) .info header {
+	background-image: url(image/5.jpg);
+}
 </style>
 </head>
 
 <body style="overflow-x:hidden;overflow-y:hidden">
-	<!--<img  src="image/DSC00606.png"  alt=""/>
-	<body style="overflow-x:hidden">
-    没有垂直滚动条
-    <body style="overflow-y:hidden">
-    没有滚动条
-    <body style="overflow-x:hidden;overflow-y:hidden">或<body
-    style="overflow:hidden">
--->
 	<div class="food">	 
 	<ul>
-			<li class="album"><img border="10" height="700" alt="" src="image/DSC00611.png" onmouseover="this.src='image/3.jpg'" onmouseout="this.src='image/DSC00611.png'"/></a></li>
+		<li class="album"><img height="80%" alt="" src="image/6.jpg" /></li>
+			
+	<div class="wrapper">
+				<ul class="stage clearfix">
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								<header>
+									<h1>It's a Wonderful Life</h1>
+									<span class="year">1946</span>
+									<span class="rating">PG</span>
+									<span class="duration">130 minutes</span>
+								</header>
+								<p>
+									Thoreau said,"Most men lead lives of quiet desperation."
+								</p>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div><!-- /wrapper -->
+	
+		<!--
 			<li class="album" id="over">
 			<img  border="10" height="270" alt=""src="image/DSC00606.png"/></a></li>
-			
+			-->
 		</ul>
-		<p class="title1" id="t1">Photoshop基本后期调色</p>
+		<p class="title1" id="t1">Photoshop<img src="image/title.jpg" width="400"><br></p>
    
 <div id="nav">
 	<ul>
-		<li><a href="index.html">构图</a>
+		<li><a href="composition.html">构图</a>
 		</li>
-		<li><a href="JAPAN.html">调色</a>
+		<li><a href="html/colourstyle.html">调色</a>
 		</li>
-		<li><a href="zhoushan.html">测试</a>
+		<li><a href="album.html">画册</a>
+		</li>
+		<li><a href="html/structure-test.html">测试</a>
 		</li>
 	</ul>
 </div>
