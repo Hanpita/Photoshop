@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>三分构图法</title>
+		<meta charset="UTF-8" />
+		
+		<link rel="stylesheet" type="text/css" href="css/slide.css" />
+	    <link rel="stylesheet" href="css/daohang.css">
+	<style type="text/css">
+	*{padding:0; margin:0}
+	body{
+		//background-color:rgb(69, 0, 183);
+		background-color:black;
+	}
+	.container{                           /*最大的div*/
+		/*width:1000px;*/
+		width:900px;
+		height:768px;
+		position:absolute;
+		right:0px;
+		background-color:black;
+	}
+	.whole{                           /*最大的div*/
+		/*width:1000px;*/
+		width:900px;
+		height:768px;
+		margin-left:120px;
+		position: relative;
+		background-color:black;
+	}
+	#pic{
+		width:660px;
+		border-width:10px;
+		padding-top:20px;
+	}
+	#des1{
+		width:550px;
+		margin:auto;
+		padding-top:10px; 
+		font-size:16px;
+		color:white;
+		line-height:1.8;
+		text-align: left;
+		
+	}
+
+	ul>li
+	{
+		//float: left;
+		list-style-type: none;
+	}
+</style>
+		
+	</head>
+	
+	<body style="overflow-x:hidden;overflow-y:hidden">
+		<div class="svg-wrap">
+			<svg width="64" height="64" viewBox="0 0 64 64">
+				<path id="arrow-left-1" d="M46.077 55.738c0.858 0.867 0.858 2.266 0 3.133s-2.243 0.867-3.101 0l-25.056-25.302c-0.858-0.867-0.858-2.269 0-3.133l25.056-25.306c0.858-0.867 2.243-0.867 3.101 0s0.858 2.266 0 3.133l-22.848 23.738 22.848 23.738z" />
+			</svg>
+			<svg width="64" height="64" viewBox="0 0 64 64">
+				<path id="arrow-right-1" d="M17.919 55.738c-0.858 0.867-0.858 2.266 0 3.133s2.243 0.867 3.101 0l25.056-25.302c0.858-0.867 0.858-2.269 0-3.133l-25.056-25.306c-0.858-0.867-2.243-0.867-3.101 0s-0.858 2.266 0 3.133l22.848 23.738-22.848 23.738z" />
+			</svg>
+			
+		</div>
+<div class="nav">
+	<div class="link1"><a href="composition.html" style="font-weight: bold;">Ⅰ构图</a>
+			<ul>
+			<li><a href="html/PS-structure-video.html">裁剪工具</a></li>
+			<li><a href="yindao.html"><u>构图方法</u></a></li>
+			<li><a href="html/structure-test.html">构图练习</a></li>
+			</ul>
+	</div>
+	<div class="link2"><a href="" style="font-weight: bold;">Ⅱ 调色</a>
+			<ul>
+			<li><a href="html/colourstyle.html">色调类型</a></li>
+			<li><a href="">调色练习</a></li>
+			</ul>
+	</div>
+	<div class="link3"><a href="" style="font-weight: bold;">Ⅲ 测试</a>
+			<ul>
+			<li><a href="">理论选择题</a></li>
+			<li><a href="">综合运用</a></li>
+			</ul>
+	</div>
+</div>
+<div class="whole">
+			
+			<section class="color-1">
+				
+				
+	<div class="container" >	
+	<ul>
+		
+	<li><img id="pic"  src="image/composition/1.jpg"  alt=""></li>
+	<li id="des1"><h1>三分法</h1>
+		<p id="sanfen">摄影三分法是一种在摄影、绘画、设计等艺术中经常使用的构图手段
+			<br>有时也称作<b>井字构图法</b>
+			<br>三分法要求把画面横直都分为三等分，共划分九格，画面出现两直两横的垂直及水平线，产生四个交叉点，该理论就是要求把主体安排在四个交错点上，原因是这四个交错点最易吸引目光，而且画面的垂直及水平主线（明显或暗线）都要安排在四条横直线上</p>
+	</li>
+	</ul>
+	</div>
+				
+				<nav class="nav-slide">
+					<a class="prev" href="yindao.html">
+						<span class="icon-wrap"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-left-1"></use></svg></span>
+						<div>
+							<h3>引导线构图法</h3>
+							<img src="image/composition/3.jpg" alt="Previous thumb"/>
+						</div>
+					</a>
+					<a class="next" href="duijiao.html">
+						<span class="icon-wrap"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-right-1"></use></svg></span>
+						<div>
+							<h3>对角线构图法</h3>
+							<img src="image/composition/4.jpg" alt="Next thumb"/>
+						</div>
+					</a>
+				</nav>
+			</section>
+			
+		</div>
+		
+	</body>
+<script type="text/javascript">
+var pre = document.getElementById("sanfen");
+var text = pre.innerText;
+var num = 0;
+function run() {
+    pre.innerText = text.slice(0,num) + (num%2==0?"":"_");
+    if (++num<=text.length)
+        setTimeout(run, 60);
+}
+run();
+</script>
+</html>
