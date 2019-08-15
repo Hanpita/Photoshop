@@ -7,17 +7,15 @@
 	<style type="text/css">
 	*{padding:0; margin:0}
 	body{
-		//background-color:rgb(69, 0, 183);
-		background-color:white;
-		background-image:url(image/1.png);
-		
-		
+		background-image:url(image/1.jpg);
 	}
-	.whole{                           /*最大的div*/
-		width:1024px;
-		height:768px;
+	.container{             /*最大的div*/
+		width:820px;
+		height:100vh;
+		display: flex;
 		margin: auto;
-		//background-color:black;
+		box-sizing: border-box;
+		position: relative;
 	}
 	.album{                     /*图片*/
 		float: left;
@@ -27,7 +25,7 @@
 	-webkit-transition:width 1s, height 1s, -webkit-transform 1s; /* Safari and Chrome */
 	-o-transition:width 1s, height 1s, -o-transform 1s; /* Opera */
 	}
-	a:link{
+	container>a:link{
 		color: black;
 	}
 	.album img:hover{ 
@@ -44,55 +42,66 @@
 	
 	#over1{
 		position:absolute;
-		margin-left:450px;
-		margin-top:30px;
+		left:53%;
+		top:5%;
+		width:460px;
+		width:56%;
 		
 	}
 	#over2{
 		position:absolute;
-		margin-left:600px;
-		margin-top:400px;
+		left:42%;
+		top:39%;
+		width:245px;
+		width:30%;
 	}
 	#over3{
 		position:absolute;
-		margin-left:350px;
-		margin-top:300px;
+		left:70%;
+		top:60%;
+	    //height:210px;
+		width:38%;
 	}
+	
+
 </style>
 </head>
 
 <body style="overflow-x:hidden;overflow-y:hidden">
 <div class="nav">
-	<div class="link1"><a href="composition.html" style="font-weight: bold;"><u>Ⅰ构图</u></a>
+	<div class="link1"><a href="composition.html" style="font-weight: bold;"><u>Ⅰ 构图</u></a>
 			<ul>
 			<li><a href="html/PS-structure-video.html">裁剪工具</a></li>
 			<li><a href="yindao.html">构图方法</a></li>
 			<li><a href="html/structure-test.html">构图练习</a></li>
 			</ul>
 	</div>
-	<div class="link2"><a href="" style="font-weight: bold;">Ⅱ 调色</a>
+	<div class="link2"><a href="html/colourstyle.html" style="font-weight: bold;">Ⅱ 调色</a>
 			<ul>
 			<li><a href="html/colourstyle.html">色调类型</a></li>
-			<li><a href="">调色练习</a></li>
+			<li><a href="html/colourstyle-test.html">调色练习</a></li>
 			</ul>
 	</div>
+	
 	<div class="link3"><a href="" style="font-weight: bold;">Ⅲ 测试</a>
 			<ul>
-			<li><a href="">理论选择题</a></li>
-			<li><a href="">综合运用</a></li>
+			<li><a href="html/main-test.html">理论选择题</a></li>
+			<li><a href="apply.html">综合运用</a></li>
 			</ul>
+	</div>
+	<div class="link4"><a href="album.html" style="font-weight: bold;">Ⅳ 相册</a>
 	</div>
 </div>
 	
-<div class="whole">	 
+<div class="container">	 
 	<ul>
 		<li class="album"><a href="yindao.html"><img border="10"  alt="" src="image/composition/03.jpg" onmouseout="this.src='image/composition/3.jpg'" onmouseover="this.src='image/composition/03.jpg" /></a></li>
-		<li class="album" id="over1">
-			<a href="sanfen.html"><img  border="10" width="517px" alt="" src="image/composition/01.jpg" onmouseout="this.src='image/composition/1.jpg'" onmouseover="this.src='image/composition/01.jpg" /></a></li>
-		<li class="album" id="over3">
-			<a href="duijiao.html"><img  border="10" width="287px" alt="" src="image/composition/04.jpg" onmouseout="this.src='image/composition/004.jpg'" onmouseover="this.src='image/composition/04.jpg" /></a></li>
-		<li class="album" id="over2">
-			<a href="duichen.html"><img  border="10" height="270" alt="" src="image/composition/02.jpg" onmouseout="this.src='image/composition/2.jpg'" onmouseover="this.src='image/composition/02.jpg" /></a></li>
+		<li class="album" >
+			<a href="sanfen.html"><img id="over1" border="10" alt="" src="image/composition/01.jpg" onmouseout="this.src='image/composition/1.jpg'" onmouseover="this.src='image/composition/01.jpg" /></a></li>
+		<li class="album" >
+			<a href="duijiao.html"><img id="over2" border="10" alt="" src="image/composition/04.jpg" onmouseout="this.src='image/composition/004.jpg'" onmouseover="this.src='image/composition/04.jpg" /></a></li>
+		<li class="album" >
+			<a href="duichen.html"><img id="over3" alt="" border="10px" src="image/composition/02.jpg" onmouseout="this.src='image/composition/2.jpg'" onmouseover="this.src='image/composition/02.jpg" /></a></li>
 	</ul>
 	</div>
 	<script>

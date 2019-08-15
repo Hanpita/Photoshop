@@ -12,25 +12,27 @@
 	}
 </script>
 <style type="text/css">
-	*{padding:0; margin:0}
+body,ul,h2,h3,h4,form,input,textarea,select{padding:0;margin:0;}
+li{list-style:none;}
+img{border:none;}
+a{text-decoration:none;}
+a.hover{text-decoration:underline;}
+	
+*{padding:0; margin:0}
 	body{
-		//background-color:rgb(69, 0, 183);
 		background-color:black;
+		width:100%;
 	}
-	.food{                           /*最大的div*/
-		/*width:1000px;*/
+	.container{                    /*最大的div*/
+		background-color:black;
 		width:1024px;
-		height:768px;
+		height: 96vh;
+		display: flex;
 		margin: auto;
-		
-		//margin-top:80px;
-		//margin-left:80px;
-		//margin-right:80px;
-		background-color:black;
-		//background-color:white;
-		//background-color:rgb(69, 0, 183);
+		box-sizing: border-box;
+		position: relative;
 	}
-	.food ul li{                     
+	.container ul li{                     
 		float:left;
 		list-style-type: none;
 	}
@@ -54,19 +56,16 @@
 	#nav{                          /*按钮*/
 		position:absolute;
 		z-index: 999;
-		margin-left:750px;
-		padding-top:350px;
+		margin-left:74%;
+		padding-top:33%;
 	}
 	#nav ul li{
-	width: 200px;
+	width:400%;
 	float: inherit;
 	list-style-type: none;
-	//color:#912427;
-	
 	background-color:rgba(116,21,22,1.00);
-	
 	text-align: center;
-	margin-top: 30px;
+	margin-top:40%;
 	
 		/*鼠标放上时背景变化时间*/
 	transition:background-color 1s linear;
@@ -109,17 +108,21 @@
 	}
 	#t1{
 		position:absolute;
-		margin-left:600px;
-		top:120px;
+		margin-left:59.5%;
+		top:17%;
+		width:100%;
 	}
-	
+	#big{
+		width:100%;
+	}
 /*************************************
 Build the scene and rotate on hover
 **************************************/	
 .wrapper {
 	position: absolute;
-	margin-left:400px;
-	margin-top:300px;
+	width: 100%;
+	margin-left:40%;
+	margin-top:28%;
 }
 .stage {
 	list-style: none;
@@ -163,8 +166,8 @@ Transform and style the two planes
 .movie .poster, 
 .movie .info {
 	position: absolute;
-	width: 250px;
-	height:350px;
+	width:54%;
+	height:49%;
 	background-color: #fff;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
@@ -227,9 +230,9 @@ Transform and style the two planes
 </head>
 
 <body style="overflow-x:hidden;overflow-y:hidden">
-	<div class="food">	 
+	<div class="container"> 
 	<ul>
-		<li class="album"><img height="80%" alt="" src="image/6.jpg" /></li>
+		<li class="album"><img id="big" alt="" src="image/6.jpg" /></li>
 			
 	<div class="wrapper">
 				<ul class="stage clearfix">
@@ -258,7 +261,8 @@ Transform and style the two planes
 			<img  border="10" height="270" alt=""src="image/DSC00606.png"/></a></li>
 			-->
 		</ul>
-		<p class="title1" id="t1">Photoshop<img src="image/title.jpg" width="400" alt=""><br></p>
+		<p class="title1" id="t1">Photoshop<br>
+		<img src="image/title.jpg" width="400" alt=""><br></p>
    
 <div id="nav">
 	<ul>
@@ -266,10 +270,11 @@ Transform and style the two planes
 		</li>
 		<li><a href="html/colourstyle.html">调色</a>
 		</li>
-		<li><a href="album.html">画册</a>
-		</li>
 		<li><a href="html/structure-test.html">测试</a>
 		</li>
+		<li><a href="album.html">相册</a>
+		</li>
+		
 	</ul>
 </div>
  </div>
