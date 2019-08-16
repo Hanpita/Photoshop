@@ -27,15 +27,14 @@ a:hover, a:focus {
 
 /* ΩÈ…‹øÚ*/
 section {
-	width:900px;
-	height:768px;
-	text-align: center;
-        position:absolute;
-	right:0px;        
-//position:relative;
+	width:850px;
+	//height:768px;
+        height:100%;
+	//text-align: center;
+       position:absolute;  
+      //position:relative;
 	overflow: hidden;
 }
-
 section h2 {
 	font-weight: 300;
 	color: rgba(255,255,255,0.3);
@@ -133,6 +132,7 @@ background-color: #fff;
 
 .nav-slide svg.icon {
 	fill: #34495e;
+
 }
 
 

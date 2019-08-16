@@ -1,0 +1,73 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body,ul,h2,h3,h4,form,input,textarea,select{padding:0;margin:0;}
+li{list-style:none;}
+img{border:none;}
+a{text-decoration:none;}
+a.hover{text-decoration:underline;}
+
+body{
+	background-color: #000000;
+}
+
+/*主体*/
+
+.ul1 {
+    border: 1px double #2d2d30;
+    box-shadow: #737373 8px 8px 5px;
+    overflow: auto;
+	overflow-y:scroll;
+	width: 80%;
+	height: 90vh;
+	margin-left:12%;
+	margin-top:2%;
+	position: relative;
+	color:#000000;
+        color:#ffffff;
+	font-family: "楷体", "宋体", "幼圆";
+	background-color:#FFFFFF;
+        background-color: #8198A7;
+	
+}
+.ul1 li{
+    list-style: none;
+    font-size:20px;
+	
+}
+
+img{
+	vertical-align: middle;
+}
+.red{
+    color: red;
+    font-weight: 400;
+    font-size: 20px;
+}
+.span1{
+
+    line-height: 30px;
+}
+.a1{
+    margin-left: 20px;
+}
+
+#submit{
+	float: left;
+	bottom: 10px;
+	margin-left:60px;
+	
+}
+.chongzhi{
+	float: left;
+	bottom: 10px;
+	margin-left: 20px;
+}
+.answer{
+	float: left;
+	bottom: 10px;
+	margin-left: 20px;
+}
+.red{
+	display: none;
+}
+

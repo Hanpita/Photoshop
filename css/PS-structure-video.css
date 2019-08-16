@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 body,ul,h2,h3,h4,form,input,textarea,select{padding:0;margin:0;}
 li{list-style:none;}
@@ -8,103 +8,18 @@ a.hover{text-decoration:underline;}
 body{
 	background-color: #000000;
 }
-/*导航栏*/
-.nav{
-		position: fixed;
-		width: 80px;
-		top:40%;
-		margin-left: -60px;
-		text-align:center;
-		font-size: 14px;
-}
-.nav a{
-                  color:white;
-}
-.nav:hover{
-		-webkit-transform:translate(60px,0);
-		-webkit-transition-duration:1s;
-		-webkit-transition-timing-function:linear;
-		transform:translate(60px,0);
-		transition-duration:1s;
-		transition-timing-function:linear;
-}
-.link1,.link2,.link3{	
-		width: 80px;
-		height: 33px;
-		line-height: 33px;
-		
-		
-}
-.link1{
-                  background-color:#313131;
-}
-.link1 a,.link2 a,.link3 a{
-		padding: 2px 5px;
-}
-.link1>ul>li>a:hover{
-		color: #000000;
-                  background-color:white;
-}
-.link2{
-		
-                background-color:#5D5D5D;
-}
-.link2>ul>li>a:hover{
-		color:#313131;
-                  background-color:white;
-}
-.link3{
-		
-                background-color:#949494;
-}
-.link3>ul>li>a:hover{
-		color:#5D5D5D;
-                  background-color:white;
-}
-.link1:hover{
-		height: 140px;
-                  border-bottom: 1px solid #FFFFFF;
-}
-.link2:hover{
-		height: 120px;
-                  border-bottom: 1px solid #FFFFFF; 
-}
-.link3:hover{
-		height: 110px;
-                  border-bottom: 1px solid #FFFFFF;
-}
-	
-.link1>ul>li{
-		width: 80px;
-		height: 33px;
-		line-height: 33px;
-		text-align:center;
-		position:relative;
-}
-.link2>ul>li��.link3>ul>li{
-		width: 80px;
-		height: 36px;
-		line-height: 33px;
-		text-align:center;
-		position:relative;
-}
-.link1>ul,.link2>ul,.link3>ul{
-		display:none
-}
-.link1>ul>li,.link2>ul>li,.link3>ul>li{
-		width: 80px;
-		height: 33px;
-		line-height: 33px;
-}
-.link1:hover>ul,.link2:hover>ul,.link3:hover>ul{
-		display:block;
-		position: absolute;
-		left: 0;	
-}
+
 .container{
 	width:80%;
 	height:90vh;
 	margin-left:12%;
 	margin-top:2%;
-	border: 1px solid #000000;
+	//border: 10px solid #ffffff;
+}
+.container:focus{
+
+    border:none;
+
+    outline:none;
+
 }
