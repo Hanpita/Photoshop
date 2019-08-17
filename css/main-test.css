@@ -25,8 +25,7 @@ body{
 	color:#000000;
         color:#ffffff;
 	font-family: "楷体", "宋体", "幼圆";
-	background-color:#FFFFFF;
-        background-color: #8198A7;
+        background-color:#9F9F9F;
 	
 }
 .ul1 li{
@@ -54,18 +53,25 @@ img{
 #submit{
 	float: left;
 	bottom: 10px;
-	margin-left:60px;
+	margin-left:30%;
 	
-}
-.chongzhi{
-	float: left;
-	bottom: 10px;
-	margin-left: 20px;
 }
 .answer{
 	float: left;
 	bottom: 10px;
-	margin-left: 20px;
+	margin-left: 50px;
+}
+.practice{
+	display: block;
+	width: 86px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	font-size: 17px;
+	background-color:#D7D7D7;
+	float: left;
+	bottom: 10px;
+	margin-left: 270px;
 }
 .red{
 	display: none;

@@ -5,7 +5,7 @@ li{list-style:none;}
 img{border:none;}*/
 a{text-decoration:none;}
 a.hover{text-decoration:underline;}
-/*µ¼º½À¸*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 .nav{
 		position: fixed;
 		width: 80px;
@@ -16,7 +16,7 @@ a.hover{text-decoration:underline;}
 		z-index: 999;
 }
 .nav a{
-		//color: #FFF800;
+	
                   color:#ffffff;
 }
 .nav:hover{
@@ -35,7 +35,7 @@ a.hover{text-decoration:underline;}
 		
 }
 .link1{
-		//background-color: #000000;
+	
                   background-color:#313131;
 }
 .link1 a,.link2 a,.link3 a,.link4 a{
@@ -43,7 +43,7 @@ a.hover{text-decoration:underline;}
 }
 .link1>ul>li>a:hover{
 		color: #000000;
-		//background-color:#FFF800;
+		
                   background-color:white;
 }
 .link2{
@@ -52,7 +52,7 @@ a.hover{text-decoration:underline;}
 }
 .link2>ul>li>a:hover{
 		color:#313131;
-		//background-color:#FFF800;
+	
                   background-color:#FFFFFF;
 }
 .link3{
@@ -61,7 +61,7 @@ a.hover{text-decoration:underline;}
 }
 .link3>ul>li>a:hover{
 		color:#5D5D5D;
-		//background-color:#FFF800;
+		
                   background-color:white;
 }
 .link4{
@@ -70,27 +70,27 @@ a.hover{text-decoration:underline;}
 }
 .link4>ul>li>a:hover{
 		color:#5D5D5D;
-		//background-color:#FFF800;
+		
                   background-color:white;
 }
 .link1:hover{
 		height: 140px;
-		//border-bottom: 1px solid #FFF800; 
+		
                   border-bottom: 1px solid #FFFFFF;
 }
 .link2:hover{
 		height: 110px;
-		//border-bottom: 1px solid #FFF800; 
+		
                   border-bottom: 1px solid #FFFFFF; 
 }
 .link3:hover{
 		height:110px;
-		//border-bottom: 1px solid #FFF800; 
+		
                   border-bottom: 1px solid #FFFFFF;
 }
 .link4:hover{
 		height:90px;
-		//border-bottom: 1px solid #FFF800; 
+		
                   border-bottom: 1px solid #FFFFFF;
                 padding-top:60%;
 }	
@@ -101,7 +101,7 @@ a.hover{text-decoration:underline;}
 		text-align:center;
 		position:relative;
 }
-.link2>ul>li£¬.link3>ul>li£¬.link4>ul>li{
+.link2>ul>li,.link3>ul>li,.link4>ul>li{
 		width: 80px;
 		height: 36px;
 		line-height: 33px;
