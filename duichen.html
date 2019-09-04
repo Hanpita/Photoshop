@@ -62,27 +62,29 @@
 		</div>
 
 <div class="nav">
-	<div class="link1"><a href="composition.html" style="font-weight: bold;">Ⅰ 构图</a>
+	<div class="link5"><a href="index.html" style="font-weight: bold;">Ⅰ 首页</a>
+	</div>
+	<div class="link1"><a href="composition.html" style="font-weight: bold;">Ⅱ 构图</a>
 			<ul>
 			<li><a href="yindao.html"><u>构图方法</u></a></li>
 			<li><a href="html/PS-structure-video.html">裁剪工具</a></li>
 			<li><a href="html/structure-test.html">构图练习</a></li>
 			</ul>
 	</div>
-	<div class="link2"><a href="html/colourstyle.html" style="font-weight: bold;">Ⅱ 调色</a>
+	<div class="link2"><a href="html/colourstyle.html" style="font-weight: bold;">Ⅲ 调色</a>
 			<ul>
 			<li><a href="html/colourstyle.html">色调类型</a></li>
 			<li><a href="html/colourstyle-test.html">调色练习</a></li>
 			</ul>
 	</div>
 	
-	<div class="link3"><a href="" style="font-weight: bold;">Ⅲ 测试</a>
+	<div class="link3"><a href="html/main-test.html" style="font-weight: bold;">Ⅳ 测试</a>
 			<ul>
 			<li><a href="html/main-test.html">理论选择题</a></li>
 			<li><a href="apply.html">综合运用</a></li>
 			</ul>
 	</div>
-	<div class="link4"><a href="album.html" style="font-weight: bold;">Ⅳ 相册</a>
+	<div class="link4"><a href="album.html" style="font-weight: bold;">Ⅴ 相册</a>
 	</div>
 </div>
 		
@@ -96,7 +98,9 @@
 	<ul>	
 	<li><img id="pic"  src="image/composition/2.jpg"  alt=""></li>
 	<li id="des1">
-	<audio src="music/duichen.3gpp" controls style="width: 100%;">Your browser does not support the audio element.</audio>
+	<audio src="music/duichen.mp3" controls="controls" autoplay="autoplay" style="width: 100%;">Your browser does not support the audio element.</audio>
+	
+
 	<h1>对称构图法</h1>
 		<p id="sanfen">对称构图即按照一定的对称轴或对称中心，使画面中景物形成轴对称或者中心对称。
 对称法常与中心构图联合使用，让对称中心位于画面中心，或使对称轴通过画面中心。
@@ -106,8 +110,7 @@
 对称式构图多用于建筑、倒影拍摄等。</p>
 	</li>
 	</ul>
-	<div>
-	</div>
+	
 				
 				<nav class="nav-slide">
 					<a class="prev" href="duijiao.html">
@@ -126,7 +129,6 @@
 					</a>
 				</nav>
 			</section>
-			
 		</div>
 		
 	</body>
@@ -137,7 +139,7 @@ var num = 0;
 function run() {
     pre.innerText = text.slice(0,num) + (num%2==0?"":"_");
     if (++num<=text.length)
-        setTimeout(run, 60);
+        setTimeout(run, 250);
 }
 run();
 </script>

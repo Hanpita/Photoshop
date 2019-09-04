@@ -13,10 +13,14 @@ body{
 .container{
 	width: 90%;
 	height: 96vh;
-	margin-left:8%;
-	margin-top: 1%;
 	display: flex;
 	box-sizing: border-box;
+	position:fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
 }
 .box {
   flex: 1;
