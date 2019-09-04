@@ -26,11 +26,17 @@ a.hover{text-decoration:underline;}
 	.container{                    /*最大的div*/
 		background-color:black;
 		width:1024px;
-		height: 96vh;
+		height:86vh;
 		display: flex;
 		margin: auto;
 		box-sizing: border-box;
 		position: relative;
+		position:fixed;
+		left:0;
+		right:0;
+		top:0;
+		bottom:0;
+		margin:auto;
 	}
 	.container ul li{                     
 		float:left;
@@ -38,7 +44,7 @@ a.hover{text-decoration:underline;}
 	}
 	.album{                     /*图片*/
 		float: left;
-		overflow:hidden;
+		//overflow:hidden;
 		transition:width 2s, height 2s;
 	-moz-transition:width 1s, height 1s, -moz-transform 1s; /* Firefox 4 */
 	-webkit-transition:width 1s, height 1s, -webkit-transform 1s; /* Safari and Chrome */
@@ -114,6 +120,7 @@ a.hover{text-decoration:underline;}
 	}
 	#big{
 		width:100%;
+		margin-top: -50px;
 	}
 /*************************************
 Build the scene and rotate on hover
@@ -122,7 +129,7 @@ Build the scene and rotate on hover
 	position: absolute;
 	width: 100%;
 	margin-left:40%;
-	margin-top:28%;
+	margin-top:26%;
 }
 .stage {
 	list-style: none;

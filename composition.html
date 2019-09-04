@@ -11,11 +11,18 @@
 	}
 	.container{             /*最大的div*/
 		width:820px;
-		height:100vh;
+		height:82vh;
 		display: flex;
 		margin: auto;
 		box-sizing: border-box;
 		position: relative;
+		position:fixed;
+		left:0;
+		right:0;
+		top:0;
+		bottom:0;
+		margin:auto;
+		//background-color:wheat;
 	}
 	.album{                     /*图片*/
 		float: left;
@@ -39,7 +46,12 @@
             -o-transform:scale(1.1);
             -ms-transform:scale(1.1);
 	}
-	
+	#over0{
+		position:absolute;
+		margin-top:-6%;
+		width:450px;
+		
+	}
 	#over1{
 		position:absolute;
 		left:53%;
@@ -97,7 +109,7 @@
 	
 <div class="container">	 
 	<ul>
-		<li class="album"><a href="yindao.html"><img border="10"  alt="" src="image/composition/03.jpg" onmouseout="this.src='image/composition/3.jpg'" onmouseover="this.src='image/composition/03.jpg" /></a></li>
+		<li class="album"><a href="yindao.html"><img id="over0" border="10"  alt="" src="image/composition/03.jpg" onmouseout="this.src='image/composition/3.jpg'" onmouseover="this.src='image/composition/03.jpg" /></a></li>
 		<li class="album" >
 			<a href="sanfen.html"><img id="over1" border="10" alt="" src="image/composition/01.jpg" onmouseout="this.src='image/composition/1.jpg'" onmouseover="this.src='image/composition/01.jpg" /></a></li>
 		<li class="album" >

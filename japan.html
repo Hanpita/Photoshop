@@ -7,19 +7,36 @@
 	<style type="text/css">
 	*{padding:0; margin:0}
 	body{
-		//background-color:rgb(69, 0, 183);
-		background-color:black;
-	}
-	.whole{                           /*最大的div*/
-		width:1024px;
-		height:768px;
-		margin:auto;
-		background-color:black;
-	}
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	background-color: #000000;
+}
+.container{
+	width:60%;
+	height:90vh;
+	position:fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	//background-color: wheat;
+}
+.container:focus{
+
+    border:none;
+
+    outline:none;
+
+}
+
 	#title{
 	font-size:30px;
 	color: white;
 	text-align: center;
+	
 	}
 	#t{
 	    border: solid;   /*设置边框样式跟颜色*/    
@@ -28,23 +45,24 @@
         border-width: 5px; /*设置边框宽度*/
         border-color: #ffffff;  /*设置背景色*/
 	    line-height:50px;
-		margin-left:102px;
+		margin-top:5%;
 		}
-	.container{
-	width:80%;
-	margin:0 auto;
-	margin-top: 10px;
-	}
 	img:hover
 	{
 		opacity:0.5;
 		filter:alpha(opacity=50); /* 针对 IE8 以及更早的版本 */
 }
+img{
+	float:left;
+	border-right:solid;  /*设置边框样式跟颜色*/    
+        border-width: 5px; /*设置边框宽度*/
+        border-color: #ffffff;  /*设置背景色*/
+}
+
 	</style>
 </head>
-		
-<body style="overflow-x:hidden;overflow-y:hidden">
 
+<body>
 <div class="nav">
 	<div class="link5"><a href="index.html" style="font-weight: bold;">Ⅰ 首页</a>
 	</div>
@@ -71,16 +89,14 @@
 	<div class="link4"><a href="album.html" style="font-weight: bold;">Ⅴ 相册</a>
 	</div>
 </div>
-	<div class="whole">
-	<div class="wrap">
-			<a href="html/colourstyle.html"><img alt="" src="image/timg .jpg" height="50px"></a>
-		</div>
-	<div id="t"><p id="title">日系调色教程</p></div>
+	
 	<div class="container">
-	<video  controls="controls" autoplay="autoplay"  style="width:100%;height:100%">
-		<source src="video/japan.mp4">
+		<div id="t"><div class="wrap">
+			<a href="html/colourstyle.html"><img alt="" src="image/timg .jpg" height="50px"></a>
+		</div><p id="title">日系调色教程</p></div>
+	<video  controls="controls" autoplay="autoplay"  style="width:100%">
+		<source src="video/japan.mp4" >
 		</video>
 	</div>
-</div>
 </body>
 </html>
