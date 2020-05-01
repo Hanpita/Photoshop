@@ -2,14 +2,16 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>裁剪工具</title>
+    <title>构图工具</title>
     <link rel="stylesheet" type="text/css" href="../css/slide.css" />
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/jquery-kq-nav-left.css">
     <link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-3.3.4.css">
     <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 
-    <link rel="stylesheet" href="../css/PS-structure-video.css">
+    <link rel="stylesheet" href="../css/structure-tool.css">
+    <style>
+    </style>
 </head>
 
 <body>
@@ -86,15 +88,41 @@
         })
     </script>
     <div class="container">
-        <img src="../imgs/step.png" height="80%" width="36%" style="position:absolute;top:10%;left: 10px;" />
-        <div class="vid">
-            <video controls="controls" autoplay="autoplay" style="width:62%;height:80%;position:absolute;top: 0;right: 0;">
-                <source src="../videos/structure.mp4">
-            </video>
+        <div class="top">
+            <h1 style="margin-top:30px;font-style:italic;letter-spacing:5px;font-size: 40px;">PS构图工具</h1>
+            <div style="letter-spacing:3px;font-weight: bold;margin-top:-10px;">快捷键：C键，Shift+C键可以在三种裁剪工具中任意切换</div>
         </div>
+        <ul class="kind">
+            <li style="margin-right: 20px;">1&nbsp;裁剪工具</li>
+            <li class="tiao" style="margin-right: 15px;"></li>
+            <li style="margin-right: 15px;">2&nbsp;透视裁剪工具</li>
+            <li class="tiao" style="margin-right: 15px;"></li>
+            <li>3&nbsp;切片工具</li>
+        </ul>
+        <ul class="info">
+            <li style="margin-right: 40px;">
+                <div class="imgs">
+                    <img src="../imgs/tools/1.jpg">
+                </div>
+                <p>可在图像或图层中剪裁所选定的区域。选中裁剪工具后还可设置所裁剪的图片的比例并设置网格显示。比例可控制裁剪区域的长宽比，点开后会有很多比例可以选择，可以输入数字自行选择，点击清除方可进入自由比例状态，没有长宽比约束。网格显示可为所裁区域添加网格，网格有常规的三等分、对角线、黄金比例等，方便裁剪构图。</p>
+            </li>
+            <li style="margin-right: 40px;">
+                <div class="imgs">
+                    <img src="../imgs/tools/2.jpg">
+                </div>
+                <p>将裁剪框架内容（非矩形）变形为正矩形的框架图。例如用透视裁剪工具裁剪成一个左边大右边小的梯形框架，回车确定后，梯形会自动变成正矩形，内容（左边尺寸变大）也会自动变为矩形。</p>
+            </li>
+            <li>
+                <div class="imgs">
+                    <img src="../imgs/tools/3.jpg">
+                </div>
+                <p>切片工具就是用来对图片进行切片，可以将图片切成多张小图，规划总体切片的布局。在创建切片时对切片可设置正常、固定长宽比和固定大小三种样式。切片工具常用在网页加载高清图片或尺寸较大的图片，将切割出的多张子图在浏览器中重新组合以便达到平滑流畅的效果。</p>
+            </li>
+        </ul>
         <div class="switch">
-            <a class="Back" href="structure-tool.html">返回构图界面</a>
+            <a class="video" href="PS-structure-video.html">视频教学</a>
         </div>
     </div>
+
 </body>
 </html>

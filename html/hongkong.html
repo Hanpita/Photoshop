@@ -1,0 +1,342 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>港风调色教程</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/jquery-kq-nav-left.css">
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-3.3.4.css">
+    <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/funnyNewsTicker.css" />
+    <script src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/funnyNewsTicker.js"></script>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            background-image: url(../image/video_bg.jpg);
+            background-size: cover;
+            /*background-color: #080615;*/
+            /*background-color: white;*/
+        }
+
+        *:focus {
+            outline: none;
+        }
+
+        .container { /*最大的div*/
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            box-sizing: border-box;
+            /*background-color: darkred;*/
+        }
+
+        #title_side {
+            height: 20%;
+            /*background-color: forestgreen;*/
+        }
+
+        #pic_arrow {
+            display: block;
+            width: 110px;
+            height: 110px;
+            margin: 0 auto;
+        }
+
+        .title {
+            font-size: 50px;
+            font-family: HYZHONGXIUTIJ;
+            color: #c3c1c7;
+            /*background-color:white;*/
+            opacity: 0.9;
+            /*border: 7px solid white;*/
+            text-align: center;
+        }
+
+
+        #video_side {
+            float: left;
+            width: 65%;
+            height: 80%;
+            /*background-color: rgba(31,79,119,0.85);*/
+            /*box-shadow: 0 10px 30px 0 rgba(136,150,171,0.5);*/
+            /*border: 5px solid #1f4f77;*/
+            /*border-top-width:0;*/
+            /*border-radius: 25px;*/
+            /*border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;*/
+        }
+
+        #video {
+            /*background-color: rebeccapurple;*/
+            width: 80%;
+            height: 70%;
+            margin: 15% auto;
+        }
+
+        .btn {
+            position: absolute;
+            z-index: 99;
+            left: 10%;
+            display: block;
+            width: 15%;
+            list-style-type: none;
+            text-align: center;
+            padding: 2vh;
+            border: solid 1px #236194;
+            background-color: #236194;
+            /*字体*/
+            font-size: 2.4vh;
+            font-family: HYZHONGXIUTIJ;
+            word-spacing: 2.4vh;
+            color: white;
+        }
+
+            .btn:hover /*鼠标经过变色*/ {
+                cursor: pointer;
+            }
+
+        video {
+            /*border-radius: 25px;
+            box-shadow: 0 10px 30px 0 rgba(136,150,171,0.5);*/
+            /*border: 5px solid #1f4f77;*/
+            /*margin-top:10%;*/
+            width: 70%;
+            height: 75%;
+            margin: 7% auto;
+            display: block;
+        }
+
+
+        #text_side {
+            float: left;
+            width: 30%;
+            height: 80%;
+            /*background-color: rebeccapurple;*/
+            /*box-shadow: #e2dedf 30px 30px;*/
+            /*border-color: #e2dedf;*/
+        }
+
+        #slide {
+            /*background-color:red;*/
+            width: 80%;
+            height: 75%;
+            margin: 8% auto;
+        }
+
+        .text {
+            font-size: 2.5vh;
+            font-family: HYZHONGXIUTIJ;
+            /*text-indent: 3rem;*/
+            /*line-height: 2em;*/
+            color: black;
+            display: flex;
+            align-items: center;
+            /*text-align: center;*/
+            width: 90%;
+            margin: 0 auto;
+            letter-spacing: 3px;
+            line-height: 2em;
+        }
+
+        @font-face {
+            font-family: "HYZHONGXIUTIJ";
+            src: url("../font/HYZHONGXIUTIJ.TTF")
+        }
+    </style>
+</head>
+
+<body style="overflow-x:hidden;overflow-y:hidden">
+    <ul class="nav-left-container">
+        <div id="course_title">Photoshop<br>基本后期调色</div>
+        <li>
+            <a href="index.html">
+                <span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span>
+                <span>首页</span>
+                <span class="glyphicon glyphicon-menu-right f12 fr" aria-hidden="true"></span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="glyphicon glyphicon-calendar f12" aria-hidden="true"></span>
+                <span>构图</span>
+                <span class="glyphicon glyphicon-menu-right f12 fr" aria-hidden="true"></span>
+            </a>
+
+            <ul class="nav-left-container-small">
+                <li>
+                    <a class="J_menuItem" href="composition.html">构图方法</a>
+                </li>
+                <li>
+                    <a class="J_menuItem" href="structure-tool.html">构图工具介绍</a>
+                </li>
+                <li>
+                    <a class="J_menuItem" href="structure-test.html">构图练习</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+                <span class="glyphicon glyphicon-edit f12" aria-hidden="true"></span>
+                <span>调色</span>
+                <span class="glyphicon glyphicon-menu-right f12 fr" aria-hidden="true"></span>
+            </a>
+            <ul class="nav-left-container-small">
+                <li>
+                    <a class="J_menuItem" href="colourstyle.html">色调类型</a>
+                </li>
+                <li>
+                    <a class="J_menuItem" href="colourstyle-test.html">调色练习</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+                <span class="glyphicon glyphicon-duplicate f12" aria-hidden="true"></span>
+                <span>测试</span>
+                <span class="glyphicon glyphicon-menu-right f12 fr" aria-hidden="true"></span>
+            </a>
+            <ul class="nav-left-container-small">
+                <li>
+                    <a class="J_menuItem" href="main-test.html">理论选择题</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="album.html">
+                <span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span>
+                <span>相册</span>
+                <span class="glyphicon glyphicon-menu-right f12 fr" aria-hidden="true"></span>
+            </a>
+        </li>
+    </ul>
+    <script>
+        $('.nav-left-container').on('click', 'li', function () {
+            $(this).find('.glyphicon-menu-right').removeClass('glyphicon-menu-right').addClass('glyphicon-menu-down');
+            $(this).addClass('active').children('.nav-left-container-small').slideDown()
+
+            $(this).siblings().removeClass('active').children('.nav-left-container-small').slideUp()
+            $(this).siblings().find('.glyphicon-menu-down').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-right ');
+        })
+    </script>
+
+
+
+    <div class="container">
+        <!--<div id="t"><p id="title">港风调色教程</p></div>-->
+
+        <div id="title_side">
+            <img id="pic_arrow" src="../image/t_arrow.png" alt="" />
+            <p class="title">港风调色教程</p>
+        </div>
+
+        <div id="video_side">
+            <input class="btn" type=button value="返回色调界面" onclick="javascript:window.location.href='colourstyle.html'">
+            <video controls="controls" autoplay="autoplay">
+                <source src="../videos/hongkong.mp4">
+            </video>
+            <!--<div id="video">
+
+            </div>-->
+        </div>
+
+        <div id="text_side">
+
+            <div id="slide">
+                <div class="funnyNewsTicker fnt-radius fnt-shadow fnt-easing" id="funnyNewsTicker1">
+                    <ul>
+                        <li class="fnt-top1">
+                            <div class="fnt-content text">
+                                <p><strong>一、港风复古滤镜特点</strong><br>1.高光表现为强烈橙黄色<br>2.阴影为明显青红色<br>3.整体色彩对比强烈</p>
+                            </div>
+                            <div class="fnt-info"><span>3 / 10</span></div>
+                        </li>
+                        <li class="fnt-top1">
+                            <div class="fnt-content text">
+                                <p>
+                                    <strong>二、原片分析</strong><br>1.色彩对比不够强烈<br>2.整体过亮
+                                </p>
+                            </div>
+                            <div class="fnt-info"><span>3 / 10</span></div>
+                        </li>
+                        <li class="fnt-top1">
+                            <div class="fnt-content text">
+                                <p>
+                                    <strong>二、调色步骤</strong><br>1.导入照片,Ctrl+J复制图层（方便对比）
+                                </p>
+                            </div>
+                            <div class="fnt-info"><span>步骤一</span></div>
+                        </li>
+                        <li class="fnt-top1">
+                            <div class="fnt-content text">2.选择菜单栏的“滤镜”，使用“Camera Raw滤镜”（快捷键Ctrl+Shift+A）</div>
+                            <div class="fnt-info"><span>2 / 10</span></div>
+                        </li>
+                        <li class="fnt-top1">
+                            <div class="fnt-content text">
+                                3.进入基础调整：<br>(1).色温【-21】色调【+45】：调整至冷色偏紫
+                                <br>(2).曝光【-0.7】：整体下移，营造暗氛围
+                            </div>
+                            <div class="fnt-info"><span>3 / 10</span></div>
+                        </li>
+                        <li class="fnt-top1">
+                            <div class="fnt-content text">
+                                (4).高光【+12】和阴影【+3】：适当增加<br>
+                                (5).提亮白色部分【+17】，加深黑色部分【-30】<br>
+                            </div>
+                            <div class="fnt-info"><span></span></div>
+                        </li>
+                        <li class="fnt-top1">
+                            <div class="fnt-content text">(6).清晰度【+13】饱和度【+16】：适当增加，使得颜色图片加深</div>
+                            <div class="fnt-info"><span>4 / 10</span></div>
+                        </li>
+                        <li class="fnt-top1">
+                            <div class="fnt-content text">
+                                4.HSL调整：
+                                色相、饱和度、明亮度部分：
+                                降低蓝色（范围：【-15】-【0】）和增加紫色（范围：【5】-【10】）
+                            </div>
+                            <div class="fnt-info"><span>4 / 10</span></div>
+                        </li>
+                        <li class="fnt-top1">
+                            <div class="fnt-content text">
+                                5.色调分离：
+                                <br>(1).高光：色相【+57】调至黄色，饱和度【+59】
+                                <br>(2).阴影：色相【+198】调至青色，饱和度【+6】
+                            </div>
+                            <div class="fnt-info"><span>4 / 10</span></div>
+                        </li>
+                        <li class="fnt-top1">
+                            <div class="fnt-content text">
+                                6.效果：增加老照片感
+                                <br>(1).颗粒数量【+33】
+                                <br>(2).晕染数量【-8】
+                            </div>
+                            <div class="fnt-info"><span>4 / 10</span></div>
+                        </li>
+                        <li class="fnt-top1">
+                            <div class="fnt-content text">
+                                7.色调曲线：
+                                <br>增加图片灰度，使用S曲线适当增加对比度
+                            </div>
+                            <div class="fnt-info"><span>4 / 10</span></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#funnyNewsTicker1").funnyNewsTicker({ width: "100%", timer: 3000, titlecolor: "#FFF", itembgcolor: "#c3c1c7", infobgcolor: "#2a3245", buttonstyle: "white", bordercolor: "#2a3245" });
+        });
+    </script>
+</body>
+</html>

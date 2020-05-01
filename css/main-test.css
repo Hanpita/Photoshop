@@ -1,36 +1,77 @@
-﻿@charset "utf-8";
+@charset "utf-8";
 /* CSS Document */
 body,ul,h2,h3,h4,form,input,textarea,select{padding:0;margin:0;}
 li{list-style:none;}
 img{border:none;}
 a{text-decoration:none;}
 a.hover{text-decoration:underline;}
-
-body{
-	background-color: #000000;
+a:focus {  outline:none;   -moz-outline:none;}
+*:focus { outline: none; }
+html{
+	width: 100%;
+    height: 100%;
+	scrollbar-track-color:#000000;/*ie浏览器滚动条槽颜色*/
+	scrollbar-base-color:#2a3245;/*ie浏览器滚动条方块颜色*/
 }
-
+body{
+	background-image:url("../imgs/background2.jpg");
+	background-size:100% 100% ;	
+}
 /*主体*/
-
 .ul1 {
-    border: 1px double #2d2d30;
-    box-shadow: #737373 8px 8px 5px;
-    overflow: auto;
 	overflow-y:scroll;
-	width: 80%;
-	height: 90vh;
-	margin-left:12%;
-	margin-top:2%;
-	position: relative;
-	color:#000000;
-        color:#ffffff;
+	width: 620px;
+	height: 570px;
+	color:#FFFFFF;
 	font-family: "楷体", "宋体", "幼圆";
-        background-color:#9F9F9F;
-	background-color:#949494;
+	background-color:#000000;
+	border: 4px solid #2a3245;
+	vertical-align:middle;
+	/*水平垂直居中*/
+	position: absolute;
+	top:50%;
+	margin-top: -285px;
+	left: 50%;
+	margin-left: -310px;
+}
+/*Chrome浏览器滚动条样式*/
+.ul1::-webkit-scrollbar {/*滚动条整体样式*/
+        width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+        height: 0.5px;
+    }
+
+.ul1::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+        border-radius: 10px;
+        background:#2a3245;
+    }
+
+.ul1::-webkit-scrollbar-track {/*滚动条里面轨道*/
+     border-radius: 10px;
+     background:#000000;
+    }
+.ul1::-ms-scrollbar {/*滚动条整体样式*/
+        width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+        height: 0.5px;
+    }
+
+.ul1::-ms-scrollbar-thumb {/*滚动条里面小方块*/
+        border-radius: 10px;
+        background:#c8c7cd;
+    }
+
+.ul1::-ms-scrollbar-track {/*滚动条里面轨道*/
+     border-radius: 10px;
+     background:#000000;
+    }
+
+.ul1 .container{
+	margin-left: 50px;
+	margin-top: 30px;
+	color: #c8c7cd;
 }
 .ul1 li{
     list-style: none;
-    font-size:20px;
+    font-size: 20px;
 	
 }
 
@@ -52,26 +93,28 @@ img{
 
 #submit{
 	float: left;
-	bottom: 10px;
-	margin-left:30%;
-	
+	margin-bottom: 6px;
+	margin-left:60px;
+	width:68px;
+	height: 36px;
+	color:#FFFFFF;
+	font-size: 19px;
+	border: none;
+	font-family: '楷体';
+	background-color: #2a3245;
+	letter-spacing: 2px;
 }
+
 .answer{
 	float: left;
-	bottom: 10px;
-	margin-left: 50px;
-}
-.practice{
-	display: block;
-	width: 86px;
-	height: 36px;
-	line-height: 36px;
-	text-align: center;
+	margin-bottom: 6px;
+	margin-left:240px;
+	height:36px;
+	color:#FFFFFF;
 	font-size: 17px;
-	background-color:#D7D7D7;
-	float: left;
-	bottom: 10px;
-	margin-left: 270px;
+	border: none;
+	font-family: '楷体';
+	background-color: #2a3245;
 }
 .red{
 	display: none;

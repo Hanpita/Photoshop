@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>图册</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/jquery-kq-nav-left.css">
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-3.3.4.css">
+    <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="../album/css/index.css" media="screen" type="text/css" />
+
+    <link rel="stylesheet" href="../album/css/style.css" media="screen" type="text/css" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .whole { /*最大的div*/
+            width: 1024px;
+            height: 768px;
+            width: 90%;
+            height: 96vh;
+            margin: auto;
+            background-color: black;
+            position: relative;
+        }
+
+        .ab {
+            position: relative;
+            width: 460px;
+            height: 306px;
+        }
+
+        p {
+            text-shadow: none;
+        }
+
+        #tips {
+            position: absolute;
+            left: 10%;
+            height: 30%;
+            width: 80%;
+            top: 86%;
+        }
+
+        .tip {
+            float: left;
+        }
+
+        #des1 {
+            font-size: 1.4vw;
+            padding-top: 6%;
+            padding-left: 26%;
+        }
+
+        #des2 {
+            font-size: 1vw;
+            padding-top: 1.5%;
+            padding-left: 30%;
+            line-height: 1.3;
+            letter-spacing: 3px;
+        }
+
+        .line {
+            height: 34%;
+            width: 39%;
+            background-color: black;
+            border: solid; /*设置边框样式跟颜色*/
+            border-width: 5px; /*设置边框宽度*/
+            border-color: #F8F1EB;
+            margin-left: 5%;
+            float: left;
+            overflow: hidden;
+        }
+
+        .intro {
+            font-size: 30px;
+            color: white;
+            margin-top: 2%;
+        }
+    </style>
+</head>
+
+<body style="overflow-x:hidden;overflow-y:hidden">
+    <ul class="nav-left-container">
+        <div id="course_title">Photoshop<br>基本后期调色</div>
+        <li>
+            <a href="index.html">
+                <span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span>
+                <span>首页</span>
+                <span class="glyphicon glyphicon-menu-right f12 fr" aria-hidden="true"></span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="glyphicon glyphicon-calendar f12" aria-hidden="true"></span>
+                <span>构图</span>
+                <span class="glyphicon glyphicon-menu-right f12 fr" aria-hidden="true"></span>
+            </a>
+
+            <ul class="nav-left-container-small">
+                <li>
+                    <a class="J_menuItem" href="composition.html">构图方法</a>
+                </li>
+                <li>
+                    <a class="J_menuItem" href="structure-tool.html">构图工具介绍</a>
+                </li>
+                <li>
+                    <a class="J_menuItem" href="structure-test.html">构图练习</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+                <span class="glyphicon glyphicon-edit f12" aria-hidden="true"></span>
+                <span>调色</span>
+                <span class="glyphicon glyphicon-menu-right f12 fr" aria-hidden="true"></span>
+            </a>
+            <ul class="nav-left-container-small">
+                <li>
+                    <a class="J_menuItem" href="colourstyle.html">色调类型</a>
+                </li>
+                <li>
+                    <a class="J_menuItem" href="colourstyle-test.html">调色练习</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+                <span class="glyphicon glyphicon-duplicate f12" aria-hidden="true"></span>
+                <span>测试</span>
+                <span class="glyphicon glyphicon-menu-right f12 fr" aria-hidden="true"></span>
+            </a>
+            <ul class="nav-left-container-small">
+                <li>
+                    <a class="J_menuItem" href="main-test.html">理论选择题</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="album.html">
+                <span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span>
+                <span>相册</span>
+                <span class="glyphicon glyphicon-menu-right f12 fr" aria-hidden="true"></span>
+            </a>
+        </li>
+    </ul>
+    <script>
+        $('.nav-left-container').on('click', 'li', function () {
+            $(this).find('.glyphicon-menu-right').removeClass('glyphicon-menu-right').addClass('glyphicon-menu-down');
+            $(this).addClass('active').children('.nav-left-container-small').slideDown()
+
+            $(this).siblings().removeClass('active').children('.nav-left-container-small').slideUp()
+            $(this).siblings().find('.glyphicon-menu-down').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-right ');
+        })
+    </script>
+    <div style="text-align:center;clear:both">
+    </div>
+    <div class="whole">
+        <div id="contentContainer" class="trans3d">
+            <section id="carouselContainer" class="trans3d">
+                <figure id="item1" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img class="ab" src="../image/album/8.jpg" alt=""><p class="intro">港风 / 三分法</p></div></figure>
+                <figure id="item10" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img class="ab" src="../image/album/17.jpg" alt=""><p class="intro">日系 / 三分法</p></div></figure>
+                <figure id="item2" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img class="ab" src="../image/album/10.jpg" alt=""><p class="intro">港风 / 三分法</p></div></figure>
+                <figure id="item4" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img class="ab" src="../image/album/20.jpg" alt=""><p class="intro">欧美风 / 三分法</p></div></figure>
+                <figure id="item5" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img class="ab" src="../image/album/12.jpg" alt=""><p class="intro">对称法</p></div></figure>
+                <figure id="item6" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img class="ab" src="../image/album/13.jpg" alt=""><p class="intro">三分法</p></div></figure>
+                <figure id="item7" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img class="ab" src="../image/album/21.jpg" alt=""><p class="intro">欧美风 / 对角法</p></div></figure>
+                <figure id="item8" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img class="ab" src="../image/album/15.jpg" alt=""><p class="intro">日系 / 引导法</p></div></figure>
+                <figure id="item3" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img class="ab" src="../image/album/9.jpg" alt=""><p class="intro">港风 / 三分法</p></div></figure>
+                <figure id="item9" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img class="ab" src="../image/album/16.jpg" alt=""><p class="intro">日系 / 三分法</p></div></figure>
+                <figure id="item11" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img class="ab" src="../image/album/22.jpg" alt=""><p class="intro">欧美风 / 对角线法</p></div></figure>
+                <figure id="item12" class="carouselItem trans3d"><div class="carouselItemInner trans3d"><img class="ab" src="../image/album/19.jpg" alt=""><p class="intro">日系 / 三分法</p></div></figure>
+            </section>
+        </div>
+
+        <div id="tips">
+            <div class="line">
+                <img class="tip" src="../image/t2.jpg" alt="" height="100%"><p id="des1">向左向右滑动，相册向左右翻转</p>
+            </div>
+            <div class="line">
+                <img class="tip" src="../image/t1.jpg" alt="" height="100%"><p id="des2">从上、下分别往中间缓慢滑动<br>并将鼠标放在照片上<br>照片将放大并缓慢旋转</p>
+            </div>
+        </div>
+    </div>
+    <script src="../album/js/libs.min.js"></script>
+
+    <script src="../album/js/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+.funnyNewsTicker {
+    width: 100%;
+    overflow: hidden;
+    height: 450px;
+    position: relative;
+    padding: 0 5px;
+    box-sizing: border-box;
+    margin: 0 auto
+}
+
+    .funnyNewsTicker > ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        position: relative
+    }
+
+        .funnyNewsTicker > ul > li {
+            display: none;
+            width: 100%;
+            height: 100px;
+            background: #fff;
+            position: absolute;
+            overflow: hidden
+        }
+
+            .funnyNewsTicker > ul > li > .fnt-content {
+                position: absolute;
+                top: 0;
+                bottom: 30px;
+                left: 0;
+                right: 0;
+                box-sizing: border-box;
+                padding: 5%;
+                overflow: hidden
+            }
+
+            .funnyNewsTicker > ul > li > .fnt-info {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 20px;
+                padding: 5px;
+                border-top: solid 1px #ddd
+            }
+
+                .funnyNewsTicker > ul > li > .fnt-info span {
+                    position: absolute;
+                    left: 80px;
+                    right: 30px;
+                    text-align: center;
+                    opacity: .4;
+                    z-index: 0;
+                    font-size: 13px;
+                    cursor: default
+                }
+
+    .funnyNewsTicker > div {
+        width: 50px;
+        height: 30px;
+        cursor: pointer;
+        position: absolute;
+        opacity: .7
+    }
+
+        .funnyNewsTicker > div:hover {
+            opacity: 1
+        }
+
+        .funnyNewsTicker > div.fnt-top-arrow {
+            top: 10px;
+            background: url(image/timg.jpg) top no-repeat;
+        }
+
+        .funnyNewsTicker > div.fnt-bottom-arrow {
+            bottom: 12px;
+            background: url(image/timg.jpg) bottom no-repeat;
+        }
+
+    .funnyNewsTicker .fnt-top0 {
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.85);
+        transform: scale(.85);
+        opacity: .85;
+        top: 0;
+        z-index: 1;
+        display: block
+    }
+
+    .funnyNewsTicker .fnt-top1 {
+        -ms-transform: scale(.87);
+        -webkit-transform: scale(.9);
+        transform: scale(.9);
+        opacity: .9;
+        top: 20px;
+        z-index: 2;
+        display: block
+    }
+
+    .funnyNewsTicker .fnt-top2 {
+        -ms-transform: scale(.95);
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+        opacity: .95;
+        top: 45px;
+        z-index: 3;
+        display: block
+    }
+
+    .funnyNewsTicker .fnt-active {
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+        top: 75px;
+        z-index: 10;
+        display: block
+    }
+
+    .funnyNewsTicker .fnt-bottom2 {
+        -ms-transform: scale(.95);
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+        opacity: .95;
+        top: 105px;
+        z-index: 6;
+        display: block
+    }
+
+    .funnyNewsTicker .fnt-bottom1 {
+        -ms-transform: scale(.87);
+        -webkit-transform: scale(.9);
+        transform: scale(.9);
+        opacity: .9;
+        top: 130px;
+        z-index: 5;
+        display: block
+    }
+
+    .funnyNewsTicker .fnt-bottom0 {
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.85);
+        transform: scale(.85);
+        opacity: .85;
+        top: 150px;
+        z-index: 4;
+        display: block
+    }
+
+.fnt-easing2 {
+    transition: .25s linear;
+    -moz-transition: .25s linear;
+    -webkit-transition: .25s linear
+}
+
+.fnt-easing li {
+    transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -webkit-transition: .5s ease-out
+}
+
+.fnt-radius li {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px
+}

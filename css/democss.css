@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,h2,h3,h4,form,input,textarea,select{padding:0;margin:0;}
+li{list-style:none;}
+img{border:none;}
+a{text-decoration:none;}
+a.hover{text-decoration:underline;}
+a:focus {  outline:none;   -moz-outline:none;}
+*:focus { outline: none; }
+.container{
+	position: absolute;
+	width: 96%;
+	height: 100%;
+	right:0;
+	overflow: hidden;
+	
+}
+.container ul{
+	position: absolute;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+.container li{
+	width:100%;
+	height: 25%;
+	overflow: hidden;
+	-webkit-transition:all .1s linear;-moz-transition:all .1s linear;-o-transition:all .1s linear;-ms-transition:all .1s linear;transition:all .1s linear
+	
+}
+.container li *{-webkit-transition:all .1s linear;-moz-transition:all .1s linear;-o-transition:all .1s linear;-ms-transition:all .1s linear;transition:all .1s linear}
+
+.container li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.container .one,.three{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 55%;
+	overflow: hidden;
+}
+
+
+.container .info h1{
+	font-size: 70px;
+	text-align: center;
+	margin-top: 48px;
+	
+}
+.container .p1{
+	line-height:1.2;
+	font-size: 17px;
+	letter-spacing:2px;
+	vertical-align: middle;
+	overflow: hidden;
+	font-family: "楷体", "宋体", "幼圆";
+	width: 86%;
+	margin-left: 38px;
+	margin-top: 38px;
+}
+
+.container .p2{
+	line-height:1.2;
+	font-size: 17px;
+	letter-spacing:2px;
+	vertical-align: middle;
+	overflow: hidden;
+	font-family: "楷体", "宋体", "幼圆";
+	width: 70%;
+	margin-left:80px;
+	margin-top: 38px;
+}
+
+.container ul *{transition:all linear .1s;}
+.container .big{height: 50%;}
+.container .big .p1{margin-top: 15px;}
+.container li.big h1{font-size: 50px;text-align: center;margin-top: 20px;margin-bottom: 10px;}
