@@ -1,95 +1,94 @@
 ﻿<!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta charset="UTF-8">
-    <title>构图练习</title>
-    <link rel="stylesheet" type="text/css" href="../css/slide.css" />
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/jquery-kq-nav-left.css">
-    <link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-3.3.4.css">
-    <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<meta charset="UTF-8">
+<title>构图练习</title>
+<link rel="stylesheet" href="../css/structure-test.css">
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="../js/Untitled-2-js.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+	
+<link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-3.3.4.css">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/jquery-kq-nav-left.css">
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="../js/jquery-1.9.1.js"></script>	
+	
+<script type="text/javascript">
+$(function(){
+	var win=$(".win");
+	var links=$(".title a");
+	var float=$(".float");
+	var divs=$(".box div");
+	var num1=0;  //ǰݵ±
+	var num2=0;
+	win.hover(function(){
+		$(".leftB,.rightB").css("display","block");
+	},function(){
+		$(".leftB,.rightB").css("display","none");
+	});
+	$(".leftB").click(function(){
+		divs.finish();
+		float.stop(true);
+		var temp=num1;
+		num1--;
+		if(num1==-1){
+			num1=4;
+		}
+		divs.eq(num1).css("left",650).animate({left:0});
+		divs.eq(temp).animate({left:-650});
+		links.css("color","#009797");
+		float.animate({left:links.eq(num1).position().left})
+		links.eq(num1).css("color","#fff");
+	});
+	$(".rightB").click(function(){
+		divs.finish();
+		float.stop(true);
+		var temp=num1;
+		num1++;
+		if(num1==5){
+			num1=0;
+		}
+		divs.eq(num1).css("left",-650).animate({left:0});
+		divs.eq(temp).animate({left:650});
+		links.css("color","#000000");
+		float.animate({left:links.eq(num1).position().left})
+		links.eq(num1).css("color","#fff");
+	});
+	links.hover(function(){
+		//
+		divs.finish();
+		float.stop(true);
+		links.css("color","#000000");
+		var that=$(this);
+		var lefts=$(this).position().left;
+		float.animate({left:lefts},function(){
+			that.css("color","#fff");
+		})
+		//
+		//ݱ仯
+		var index=$(this).index(".title a");
+		num2=index;
+		if(num1==num2){
+			return;
+		}else if(num1<num2){
+			divs.eq(num2).css("left",650).animate({left:0});
+			divs.eq(num1).animate({left:-650});
+		}else if(num1>num2){
+			divs.eq(num2).css("left",-650).animate({left:0});
+			divs.eq(num1).animate({left:650});
+		}
+		num1=num2;
+		num2="";
+	},function(){
 
-
-    <link rel="stylesheet" href="../css/structure-test.css">
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="../js/Untitled-2-js.js"></script>
-    <script type="text/javascript" src="../js/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            var win = $(".win");
-            var links = $(".title a");
-            var float = $(".float");
-            var divs = $(".box div");
-            var num1 = 0;  //ǰݵ±
-            var num2 = 0;
-            win.hover(function () {
-                $(".leftB,.rightB").css("display", "block");
-            }, function () {
-                $(".leftB,.rightB").css("display", "none");
-            });
-            $(".leftB").click(function () {
-                divs.finish();
-                float.stop(true);
-                var temp = num1;
-                num1--;
-                if (num1 == -1) {
-                    num1 = 4;
-                }
-                divs.eq(num1).css("left", 650).animate({ left: 0 });
-                divs.eq(temp).animate({ left: -650 });
-                links.css("color", "#009797");
-                float.animate({ left: links.eq(num1).position().left })
-                links.eq(num1).css("color", "#fff");
-            });
-            $(".rightB").click(function () {
-                divs.finish();
-                float.stop(true);
-                var temp = num1;
-                num1++;
-                if (num1 == 5) {
-                    num1 = 0;
-                }
-                divs.eq(num1).css("left", -650).animate({ left: 0 });
-                divs.eq(temp).animate({ left: 650 });
-                links.css("color", "#000000");
-                float.animate({ left: links.eq(num1).position().left })
-                links.eq(num1).css("color", "#fff");
-            });
-            links.hover(function () {
-                //
-                divs.finish();
-                float.stop(true);
-                links.css("color", "#000000");
-                var that = $(this);
-                var lefts = $(this).position().left;
-                float.animate({ left: lefts }, function () {
-                    that.css("color", "#fff");
-                })
-                //
-                //ݱ仯
-                var index = $(this).index(".title a");
-                num2 = index;
-                if (num1 == num2) {
-                    return;
-                } else if (num1 < num2) {
-                    divs.eq(num2).css("left", 650).animate({ left: 0 });
-                    divs.eq(num1).animate({ left: -650 });
-                } else if (num1 > num2) {
-                    divs.eq(num2).css("left", -650).animate({ left: 0 });
-                    divs.eq(num1).animate({ left: 650 });
-                }
-                num1 = num2;
-                num2 = "";
-            }, function () {
-
-            })
-        })
-    </script>
+	})
+})
+</script>
 </head>
-<body style="overflow:hidden">
-    <script src="/demos/googlegg.js"></script>
-    <ul class="nav-left-container">
-        <div id="course_title">Photoshop<br>基本后期调色</div>
+<body style="overflow:hidden"><script src="/demos/googlegg.js"></script>
+	
+	<ul class="nav-left-container">
         <li>
             <a href="index.html">
                 <span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span>
@@ -123,6 +122,9 @@
                 <span class="glyphicon glyphicon-menu-right f12 fr" aria-hidden="true"></span>
             </a>
             <ul class="nav-left-container-small">
+				<li>
+                    <a class="J_menuItem" href="colourstyle-tool.html">调色工具介绍</a>
+                </li>
                 <li>
                     <a class="J_menuItem" href="colourstyle.html">色调类型</a>
                 </li>
@@ -152,7 +154,7 @@
         </li>
     </ul>
     <script>
-        $('.nav-left-container').on('click', 'li', function () {
+        $('.nav-left-container').on('click', 'li', function() {
             $(this).find('.glyphicon-menu-right').removeClass('glyphicon-menu-right').addClass('glyphicon-menu-down');
             $(this).addClass('active').children('.nav-left-container-small').slideDown()
 
@@ -160,142 +162,103 @@
             $(this).siblings().find('.glyphicon-menu-down').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-right ');
         })
     </script>
-    <div class="container">
-        <div class="win">
-            <div class="title">
-                <a href="javascript:;" style="color:#fff">1</a>
-                <a href="javascript:;">2</a>
-                <a href="javascript:;">3</a>
-                <a href="javascript:;">4</a>
-                <a href="javascript:;">5</a>
-                <div class="float"></div>
-            </div>
-
-            <div class="box">
-                <div class="question1" style="left:0">
-                    1.三分法又称作(<span class="red">B</span> )<br>
-                    <input type="radio" name="a1" value="A" class="a1" id="b1">
-                    <span class="span1">
-                        <label for="b1">A.九宫格构图法</label>
-                    </span><br>
-                    <input type="radio" name="a1" value="B" class="a1"><span class="span1"> B.井字构图法</span><br>
-                    <input type="radio" name="a1" value="C" class="a1"><span class="span1"> C.对称法</span><br>
-                    <input type="radio" name="a1" value="D" class="a1"><span class="span1"> D.中心法</span><br>
-                </div>
-                <div class="question2">
-                    2.以下哪张照片符合三分构图方法(<span class="red">C</span> )<br>
-                    <input type="radio" name="a2" value="A" class="a1" id="c1">
-                    <span class="span1" style="padding-right: 30px;">
-                        <label for="c1">
-                            A.
-                            <img src="../imgs/duichen/img-2493795dc0dd25eaf1508b67763eb9b2.jpg" style="padding-top: 20px;padding-bottom: 10px">
-                        </label>
-                    </span>
-                    <input type="radio" name="a2" value="B" class="a1" id="c2">
-                    <span class="span1">
-                        <label for="c2">
-                            B.
-                            <img src="../imgs/duichen/timg.jpg" width="150" height="100" style="padding-top: 20px;padding-bottom: 10px">
-                        </label>
-                    </span><br>
-                    <input type="radio" name="a2" value="C" class="a1" id="c3">
-                    <span class="span1" style="padding-right: 30px;">
-                        <label for="c3">
-                            C.
-                            <img src="../imgs/sanfenfa/u=2410901194,3921519318&fm=26&gp=0.jpg">
-                        </label>
-                    </span>
-                    <input type="radio" name="a2" value="D" class="a1" id="c4">
-                    <span class="span1">
-                        <label for="c4">
-                            D.
-                            <img src="../imgs/yindao/u=2758697693,1813741847&fm=26&gp=0.jpg">
-                        </label>
-                    </span>
-                </div>
-                <div class="question3">
-                    3.对称法常与哪一种构图方式联合使用(<span class="red">A</span> )<br>
-                    <input type="radio" name="a4" value="A" class="a1"><span class="span1"> A.中心构图</span><br>
-                    <input type="radio" name="a4" value="B" class="a1"><span class="span1"> B.九宫格构图</span><br>
-                    <input type="radio" name="a4" value="C" class="a1"><span class="span1"> C.对称式构图</span><br>
-                    <input type="radio" name="a4" value="D" class="a1"><span class="span1"> D.对角线构图</span>
-                </div>
-                <div class="question4">
-                    4.以下哪张照片符合对称构图方法(<span class="red">B</span> )<br>
-                    <input type="radio" name="a3" value="A" class="a1" id="d1">
-                    <span class="span1">
-                        <label for="d1">
-                            A.
-                            <img src="../imgs/sanfenfa/u=3647331518,2306714308&fm=26&gp=0.jpg" style="padding-top: 20px;padding-bottom: 10px">
-                        </label>
-                    </span>
-                    <input type="radio" name="a3" value="B" class="a1" id="d2">
-                    <span class="span1">
-                        <label for="d2">
-                            B.
-                            <img src="../imgs/duichen/u=3711294724,1795339221&fm=26&gp=0.jpg" style="padding-top: 20px;padding-bottom: 10px">
-                        </label>
-                    </span><br>
-                    <input type="radio" name="a3" value="C" class="a1" id="d3">
-                    <span class="span1">
-                        <label for="d3">
-                            C.
-                            <img src="../imgs/sanfenfa/timg (2).jpg">
-                        </label>
-                    </span>
-                    <input type="radio" name="a3" value="D" class="a1" id="d4">
-                    <span class="span1">
-                        <label for="d4">
-                            D.
-                            <img src="../imgs/yindao/timg3.jpg">
-                        </label>
-                    </span>
-                </div>
-
-
-                <div class="question5">
-                    5.以下哪张照片符合对角线构图方法( <span class="red" display="none">C</span>)<br>
-                    <input type="radio" name="a5" value="A" class="a1" id="e1">
-                    <span class="span1">
-                        <label for="e1">
-                            A.
-                            <img src="../imgs/yindao/timg (1).jpg" width="250" height="200" style="padding-top: 20px;padding-bottom: 10px">
-                        </label>
-                    </span>
-                    <input type="radio" name="a5" value="B" class="a1" id="e2">
-                    <span class="span1">
-                        <label for="e2">
-                            B.
-                            <img src="../imgs/sanfenfa/u=186994753,2975911790&fm=26&gp=0.jpg" width="250" height="200" style="padding-top: 20px;padding-bottom: 10px">
-                        </label>
-                    </span><br>
-                    <input type="radio" name="a5" value="C" class="a1" id="e3">
-                    <span class="span1">
-                        <label for="e3">
-                            C.
-                            <img src="../imgs/duijiaoxian/u=2332657779,3256423066&fm=26&gp=0.jpg" width="250" height="200">
-                        </label>
-                    </span>
-                    <input type="radio" name="a5" value="D" class="a1" id="e4">
-                    <span class="span1">
-                        <label for="e4">
-                            D.
-                            <img src="../imgs/duichen/timg.jpg" width="250" height="200">
-                        </label>
-                    </span>
-                </div>
-            </div>
-
-            <div class="leftB">&lt;</div>
-            <div class="rightB">&gt;</div>
-
-        </div>
-
-        <input type="button" class="button button-highlight button-pill button-large" style="width:90px;height: 36px;color:#000000;font-size: 17px;border: none;font-family: '黑体'" value="提交" id="submit">
-        <button class="answer" style="width:90px;height:36px;color:#000000;font-size: 17px;border: none;font-family: '黑体'">
-            查看答案
-        </button>
-
-    </div>
+	
+<div class="container" style="opacity:0.8;width: 950px;height: 600px;position:absolute;top:50%;margin-top: -300px;left: 50%;margin-left: -475px;">
+<div class="win">
+	<div class="title">
+		<a href="javascript:;" style="color:#fff">1</a>
+		<a href="javascript:;">2</a>
+		<a href="javascript:;">3</a>
+		<a href="javascript:;">4</a>
+		<a href="javascript:;">5</a>
+		<div class="float"></div>
+	</div>
+	
+	<div class="box">
+		<div class="question1" style="left:0">
+			1.三分法又称作(<span class="red">B</span> )<br>
+			 <input type="radio" name="a1" value="A" class="a1"><span class="span1"> A.九宫格构图法</span><br>
+			 <input type="radio" name="a1" value="B" class="a1"><span class="span1"> B.井字构图法</span><br>
+			 <input type="radio" name="a1" value="C" class="a1"><span class="span1"> C.对称法</span><br>
+			 <input type="radio" name="a1" value="D" class="a1"><span class="span1"> D.中心法</span><br>
+		</div>
+		<div class="question2">
+		2.以下哪张照片符合三分构图方法(<span class="red">C</span> )<br>
+                        <input type="radio" name="a2" value="A" class="a1" id="c1" >
+						<span class="span1" style="padding-right: 30px;"> <label for="c1">A.
+						<img src="../imgs/duichen/img-2493795dc0dd25eaf1508b67763eb9b2.jpg" width="150" height="100" ></label>
+						</span>
+                        <input type="radio" name="a2" value="B" class="a1" id="c2">
+						<span class="span1"> <label for="c2">B.
+						<img src="../imgs/duichen/timg.jpg" width="150" height="100"  ></label>
+						</span><br>
+                        <input type="radio" name="a2" value="C" class="a1" id="c3">
+						<span class="span1" style="padding-right: 30px;"> <label for="c3">C.
+						<img src="../imgs/sanfenfa/u=2410901194,3921519318&fm=26&gp=0.jpg" width="150" height="100" ></label>
+						</span>
+                        <input type="radio" name="a2" value="D" class="a1" id="c4">
+						<span class="span1"><label for="c4"> D.
+						<img src="../imgs/yindao/u=2758697693,1813741847&fm=26&gp=0.jpg" width="150" height="100" ></label>
+						</span>
+		</div>
+		<div class="question3">
+		 3.对称法常与哪一种构图方式联合使用(<span class="red">A</span> )<br>
+           				<input type="radio" name="a4" value="A" class="a1"><span class="span1"> A.中心构图</span><br>
+                        <input type="radio" name="a4" value="B" class="a1"><span class="span1"> B.九宫格构图</span><br>
+                        <input type="radio" name="a4" value="C" class="a1"><span class="span1"> C.对称式构图</span><br>
+                        <input type="radio" name="a4" value="D" class="a1"><span class="span1"> D.对角线构图</span>
+		</div>
+		<div class="question4">
+		 4.以下哪张照片符合对称构图方法(<span class="red">B</span> )<br>
+                        <input type="radio" name="a3" value="A" class="a1" id="d1">
+						<span class="span1"> <label for="d1">A.
+						<img src="../imgs/sanfenfa/u=3647331518,2306714308&fm=26&gp=0.jpg" width="150" height="100" ></label>
+						</span>
+                        <input type="radio" name="a3" value="B" class="a1" id="d2">
+						<span class="span1"> <label for="d2">B.
+						<img src="../imgs/duichen/u=3711294724,1795339221&fm=26&gp=0.jpg" width="150" height="100" ></label>
+						</span><br>
+                        <input type="radio" name="a3" value="C" class="a1" id="d3">
+						<span class="span1"> <label for="d3">C.
+						<img src="../imgs/sanfenfa/timg (2).jpg" width="150" height="100"  ></label>
+						</span>
+                        <input type="radio" name="a3" value="D" class="a1" id="d4">
+						<span class="span1"> <label for="d4">D.
+						<img src="../imgs/yindao/timg3.jpg" width="150" height="100"  ></label>
+						</span>
+		</div>
+		
+		
+		<div class="question5">
+		5.以下哪张照片符合对角线构图方法( <span class="red" display="none">C</span>)<br>
+                        <input type="radio" name="a5" value="A" class="a1" id="e1">
+						<span class="span1"> <label for="e1">A.
+						<img src="../imgs/yindao/timg (1).jpg" width="150" height="100" ></label>
+						</span>
+                        <input type="radio" name="a5" value="B" class="a1" id="e2">
+						<span class="span1"> <label for="e2">B.
+						<img src="../imgs/sanfenfa/u=186994753,2975911790&fm=26&gp=0.jpg" width="150" height="100" ></label>
+						</span><br>
+                        <input type="radio" name="a5" value="C" class="a1" id="e3">
+						<span class="span1"><label for="e3"> C.
+						<img src="../imgs/duijiaoxian/u=2332657779,3256423066&fm=26&gp=0.jpg" width="150" height="100"></label>
+						</span>
+                        <input type="radio" name="a5" value="D" class="a1" id="e4">
+						<span class="span1"><label for="e4"> D.
+						<img src="../imgs/duichen/timg.jpg" width="150" height="100"></label>
+						</span>
+		</div>
+	</div>
+	
+	<div class="leftB">&lt;</div>
+	<div class="rightB">&gt;</div>
+	
+</div>
+	
+	<input type="button" class="button button-highlight button-pill button-large" style="width:90px;height: 36px;color:#000000;font-size: 17px;border: none;" value="提交" id="submit">
+	<button class="answer" style="width:90px;height:36px;color:#000000;font-size: 17px;border: none;" >
+				 查看答案</button>
+	
+</div>
 </body>
 </html>

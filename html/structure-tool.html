@@ -1,22 +1,21 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>构图工具</title>
-    <link rel="stylesheet" type="text/css" href="../css/slide.css" />
+<meta charset="utf-8">
+<title>构图工具介绍</title>
+	<link rel="stylesheet" href="../css/structure-tool.css">
+	
+	<link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-3.3.4.css">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/jquery-kq-nav-left.css">
-    <link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-3.3.4.css">
     <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-
-    <link rel="stylesheet" href="../css/structure-tool.css">
-    <style>
-    </style>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	 <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
 </head>
 
-<body>
-    <ul class="nav-left-container">
-        <div id="course_title">Photoshop<br>基本后期调色</div>
+<body style="overflow-x:hidden;overflow-y:hidden;">
+	
+	 <ul class="nav-left-container">
         <li>
             <a href="index.html">
                 <span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span>
@@ -50,6 +49,9 @@
                 <span class="glyphicon glyphicon-menu-right f12 fr" aria-hidden="true"></span>
             </a>
             <ul class="nav-left-container-small">
+				<li>
+                    <a class="J_menuItem" href="colourstyle-tool.html">调色工具介绍</a>
+                </li>
                 <li>
                     <a class="J_menuItem" href="colourstyle.html">色调类型</a>
                 </li>
@@ -79,7 +81,7 @@
         </li>
     </ul>
     <script>
-        $('.nav-left-container').on('click', 'li', function () {
+        $('.nav-left-container').on('click', 'li', function() {
             $(this).find('.glyphicon-menu-right').removeClass('glyphicon-menu-right').addClass('glyphicon-menu-down');
             $(this).addClass('active').children('.nav-left-container-small').slideDown()
 
@@ -87,42 +89,40 @@
             $(this).siblings().find('.glyphicon-menu-down').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-right ');
         })
     </script>
-    <div class="container">
-        <div class="top">
-            <h1 style="margin-top:30px;font-style:italic;letter-spacing:5px;font-size: 40px;">PS构图工具</h1>
-            <div style="letter-spacing:3px;font-weight: bold;margin-top:-10px;">快捷键：C键，Shift+C键可以在三种裁剪工具中任意切换</div>
-        </div>
-        <ul class="kind">
-            <li style="margin-right: 20px;">1&nbsp;裁剪工具</li>
-            <li class="tiao" style="margin-right: 15px;"></li>
-            <li style="margin-right: 15px;">2&nbsp;透视裁剪工具</li>
-            <li class="tiao" style="margin-right: 15px;"></li>
-            <li>3&nbsp;切片工具</li>
-        </ul>
-        <ul class="info">
-            <li style="margin-right: 40px;">
-                <div class="imgs">
-                    <img src="../imgs/tools/1.jpg">
-                </div>
-                <p>可在图像或图层中剪裁所选定的区域。选中裁剪工具后还可设置所裁剪的图片的比例并设置网格显示。比例可控制裁剪区域的长宽比，点开后会有很多比例可以选择，可以输入数字自行选择，点击清除方可进入自由比例状态，没有长宽比约束。网格显示可为所裁区域添加网格，网格有常规的三等分、对角线、黄金比例等，方便裁剪构图。</p>
-            </li>
-            <li style="margin-right: 40px;">
-                <div class="imgs">
-                    <img src="../imgs/tools/2.jpg">
-                </div>
-                <p>将裁剪框架内容（非矩形）变形为正矩形的框架图。例如用透视裁剪工具裁剪成一个左边大右边小的梯形框架，回车确定后，梯形会自动变成正矩形，内容（左边尺寸变大）也会自动变为矩形。</p>
-            </li>
-            <li>
-                <div class="imgs">
-                    <img src="../imgs/tools/3.jpg">
-                </div>
-                <p>切片工具就是用来对图片进行切片，可以将图片切成多张小图，规划总体切片的布局。在创建切片时对切片可设置正常、固定长宽比和固定大小三种样式。切片工具常用在网页加载高清图片或尺寸较大的图片，将切割出的多张子图在浏览器中重新组合以便达到平滑流畅的效果。</p>
-            </li>
-        </ul>
-        <div class="switch">
-            <a class="video" href="PS-structure-video.html">视频教学</a>
-        </div>
-    </div>
-
+	
+<div class="container" style="width: 950px;height: 600px;position:absolute;top:50%;margin-top:-300px;left:50%;margin-left:-475px;z-index:2;">
+	<div class="top">
+		<h1 style="margin-top:30px;font-style:italic;letter-spacing:5px;font-size: 40px;font-weight: bold;">PS构图工具</h1>
+		<div style="letter-spacing:3px;font-weight: bold;margin-top:16px;font-size: 15px;">快捷键：C键，Shift+C键可以在三种裁剪工具中任意切换</div>
+	</div>
+	<ul id="kind" class="my" >
+		<li class="my" style="margin-right: 20px;">1&nbsp;裁剪工具</li>
+		<li  class="tiao" style="margin-right: 15px;"></li>
+		<li class="my" style="margin-right: 15px;">2&nbsp;透视裁剪工具</li>
+		<li  class="tiao" style="margin-right: 15px;"></li>
+		<li class="my" >3&nbsp;切片工具</li>
+	</ul>
+	<ul id="info" class="my" >
+	<li class="my" style="margin-right: 40px;">
+		<div class="imgs">
+		<img src="../imgs/tools/1.jpg"></div>
+		<p>可在图像或图层中剪裁所选定的区域。选中裁剪工具后还可设置所裁剪的图片的比例并设置网格显示。比例可控制裁剪区域的长宽比，点开后会有很多比例可以选择，可以输入数字自行选择，点击清除方可进入自由比例状态，没有长宽比约束。网格显示可为所裁区域添加网格，网格有常规的三等分、对角线、黄金比例等，方便裁剪构图。</p>
+	</li>
+	<li class="my" style="margin-right: 40px;">
+		<div class="imgs">
+		<img src="../imgs/tools/2.jpg" ></div>
+		<p>将裁剪框架内容（非矩形）变形为正矩形的框架图。例如用透视裁剪工具裁剪成一个左边大右边小的梯形框架，回车确定后，梯形会自动变成正矩形，内容（左边尺寸变大）也会自动变为矩形。</p>
+	</li>
+	<li class="my" >
+		<div class="imgs">
+		<img src="../imgs/tools/3.jpg"></div>
+		<p>切片工具就是用来对图片进行切片，可以将图片切成多张小图，规划总体切片的布局。在创建切片时对切片可设置正常、固定长宽比和固定大小三种样式。切片工具常用在网页加载高清图片或尺寸较大的图片，将切割出的多张子图在浏览器中重新组合以便达到平滑流畅的效果。</p>
+	</li>
+	</ul>
+	<div class="switch">
+			<a class="video" href="PS-structure-video.html">视频教学</a>
+		</div>
+</div>
+	
 </body>
 </html>

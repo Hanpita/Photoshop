@@ -1,20 +1,24 @@
 .nav-left-container {
-    background-color: #1c2b36;
+    background-image: url( "../imgs/Logo.png");
+	background-size:100% 100%; 
     position: fixed;
-    left:-170px;
+	left:-177px;
     top: 0;
     width: 220px;
     height: 100%;
-    z-index:10;
+	z-index: 10;
+	
 }
 .nav-left-container:hover{
-  -webkit-transform:translate(170px,0);
-  -webkit-transition-duration:0.5s;
-  -webkit-transition-timing-function:linear;
-  transform:translate(170px,0);
-  transition-duration:0.5s;
-  transition-timing-function:linear;
+		-webkit-transform:translate(177px,0);
+		-webkit-transition-duration:0.5s;
+		-webkit-transition-timing-function:linear;
+		transform:translate(177px,0);
+		transition-duration:0.5s;
+		transition-timing-function:linear;
 }
+
+
 .nav-left-container li a {
     font-size: 14px;
     box-sizing: border-box;
@@ -23,15 +27,15 @@
     font-weight: 600;
     padding: 15px 20px 15px 25px;
     display: block;
-    color: #869fb1;
+    color: #ffffff;
 }
 
 .nav-left-container .active {
-    border-left: 4px solid #19a9d5;
+    border-left: 4px solid #0F2F64;
 }
 
 .nav-left-container li:hover {
-    background-color: #131e26;
+    background-color: #385b94;
 }
 
 .nav-left-container .active>a {

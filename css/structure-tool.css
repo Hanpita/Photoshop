@@ -4,9 +4,12 @@ body,ul,h2,h3,h4,form,input,textarea,select{padding:0;margin:0;}
 li{list-style:none;}
 img{border:none;}
 a{text-decoration:none;}
-a.hover{text-decoration:underline;}
 a:focus {  outline:none;   -moz-outline:none;}
 *:focus { outline: none; }
+@font-face{
+	font-family:"HYZHONGXIUTIJ";
+	src:url("../font/HYZHONGXIUTIJ.TTF")
+}
 html{
 	width: 100%;
 	height: 100%;
@@ -24,24 +27,26 @@ body{
 	position:absolute;
 	top:50%;
 	margin-top: -300px;
-	left: 50%;
+	left:50%;
 	margin-left: -475px;
-
+	z-index:2;
+	
 }
 .top{
 	text-align: center;
 	color: #EBEBEB;
 }
-.container ul,li{
+.my{
 	float: left;
 }
 .tiao{
+	float: left;
 	width:80px;
 	height: 2px;
 	background-color:  #EBEBEB;
 	margin-top: 15px;
 }
-.kind{
+#kind{
 	color: #EBEBEB;
 	width: 750px;
 	position: absolute;
@@ -52,7 +57,7 @@ body{
 	margin-top: 40px;
 }
 
-.info{
+#info{
 	width: 800px;
 	height: 300px;
 	position: absolute;
@@ -60,7 +65,7 @@ body{
 	margin-left: -400px;
 	bottom: 90px;
 }
-.info li{
+#info li{
 	opacity: 0.9;
 	width: 240px;
 	height: 340px;
@@ -68,15 +73,16 @@ body{
 	background-color:#EAEAEA;
 	border-radius: 25px;
 }
-.info li:hover{
+#info li:hover{
 	background-color:#FFFFFF;
 	opacity:1;
 }
-.info li .imgs{
+#info li .imgs{
 	margin-top: 20px;
+	margin-bottom: 10px;
 	text-align: center;
 }
-.info li p{
+#info li p{
 	width: 200px;
 	margin-left: 25px;
 	font-size: 15px;
@@ -101,5 +107,6 @@ body{
 .switch a:hover{
 	color: #EBEBEB; 
 	background-color: #236194;
+	text-decoration:none;
 }
 

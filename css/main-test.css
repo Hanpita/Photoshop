@@ -4,9 +4,12 @@ body,ul,h2,h3,h4,form,input,textarea,select{padding:0;margin:0;}
 li{list-style:none;}
 img{border:none;}
 a{text-decoration:none;}
-a.hover{text-decoration:underline;}
 a:focus {  outline:none;   -moz-outline:none;}
 *:focus { outline: none; }
+@font-face{
+	font-family:"HYZHONGXIUTIJ";
+	src:url("../font/HYZHONGXIUTIJ.TTF")
+}
 html{
 	width: 100%;
     height: 100%;
@@ -23,7 +26,7 @@ body{
 	width: 620px;
 	height: 570px;
 	color:#FFFFFF;
-	font-family: "楷体", "宋体", "幼圆";
+	
 	background-color:#000000;
 	border: 4px solid #2a3245;
 	vertical-align:middle;
@@ -100,21 +103,21 @@ img{
 	color:#FFFFFF;
 	font-size: 19px;
 	border: none;
-	font-family: '楷体';
 	background-color: #2a3245;
 	letter-spacing: 2px;
 }
 
 .answer{
 	float: left;
+	width: 90px;
 	margin-bottom: 6px;
-	margin-left:240px;
+	margin-left:220px;
 	height:36px;
 	color:#FFFFFF;
 	font-size: 17px;
 	border: none;
-	font-family: '楷体';
 	background-color: #2a3245;
+	letter-spacing: 1px;
 }
 .red{
 	display: none;

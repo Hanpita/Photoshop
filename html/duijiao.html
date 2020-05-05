@@ -15,6 +15,14 @@
             margin: 0
         }
 
+        a:focus {
+            outline: none;
+            -moz-outline: none;
+        }
+
+        *:focus {
+            outline: none;
+        }
         body {
             background-color: #080615;
         }
@@ -39,6 +47,7 @@
             height: 100%;
             /*background-color:forestgreen;*/
             background-image: url("../image/composition/04.jpg");
+            background-size:100% 100%;
             float: left;
         }
 
@@ -95,7 +104,7 @@
 
 <body style="overflow-x:hidden;overflow-y:hidden">
     <ul class="nav-left-container">
-        <div id="course_title">Photoshop<br>基本后期调色</div>
+        
         <li>
             <a href="index.html">
                 <span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span>
@@ -129,6 +138,9 @@
                 <span class="glyphicon glyphicon-menu-right f12 fr" aria-hidden="true"></span>
             </a>
             <ul class="nav-left-container-small">
+				<li>
+                    <a class="J_menuItem" href="colourstyle-tool.html">调色工具介绍</a>
+                </li>
                 <li>
                     <a class="J_menuItem" href="colourstyle.html">色调类型</a>
                 </li>
@@ -208,7 +220,7 @@
                             <img src="../image/composition/1.jpg" alt="Previous thumb" />
                         </div>
                     </a>-->
-                    <a class="next" href="duichen.html">
+                    <a class="next" onclick="window.location.href='duichen.html'">
                         <span class="icon-wrap"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-right-1"></use></svg></span>
                         <div>
                             <h3>对称构图法</h3>

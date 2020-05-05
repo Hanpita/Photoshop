@@ -6,10 +6,13 @@
     <meta charset="UTF-8">
 
     <title>图册</title>
+
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/jquery-kq-nav-left.css">
     <link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-3.3.4.css">
     <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+
+    <link rel="stylesheet" href="../css/daohang.css">
     <link rel="stylesheet" href="../album/css/index.css" media="screen" type="text/css" />
 
     <link rel="stylesheet" href="../album/css/style.css" media="screen" type="text/css" />
@@ -18,14 +21,15 @@
             padding: 0;
             margin: 0;
         }
-
+        body {
+            background-color: #080615;
+        }
         .whole { /*最大的div*/
             width: 1024px;
             height: 768px;
             width: 90%;
             height: 96vh;
             margin: auto;
-            background-color: black;
             position: relative;
         }
 
@@ -42,8 +46,7 @@
         #tips {
             position: absolute;
             left: 10%;
-            height: 30%;
-            width: 80%;
+            width: 93%;
             top: 86%;
         }
 
@@ -52,23 +55,28 @@
         }
 
         #des1 {
-            font-size: 1.4vw;
-            padding-top: 6%;
-            padding-left: 26%;
+            font-size:20px;
+            text-align: center;
+            margin-top:20px;
         }
-
         #des2 {
-            font-size: 1vw;
-            padding-top: 1.5%;
-            padding-left: 30%;
-            line-height: 1.3;
+            font-size: 17px;
+            margin-top: 13px;
+            text-align: center;
+            line-height: 1.1;
             letter-spacing: 3px;
         }
+        @media screen and (max-width: 1142px) {
+            #des1 {
+                margin-top: 10px;
+            }
+        }
+        
 
         .line {
-            height: 34%;
+            height:70px;
             width: 39%;
-            background-color: black;
+            /*background-color: black;*/
             border: solid; /*设置边框样式跟颜色*/
             border-width: 5px; /*设置边框宽度*/
             border-color: #F8F1EB;
@@ -87,7 +95,6 @@
 
 <body style="overflow-x:hidden;overflow-y:hidden">
     <ul class="nav-left-container">
-        <div id="course_title">Photoshop<br>基本后期调色</div>
         <li>
             <a href="index.html">
                 <span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span>
@@ -121,6 +128,9 @@
                 <span class="glyphicon glyphicon-menu-right f12 fr" aria-hidden="true"></span>
             </a>
             <ul class="nav-left-container-small">
+				<li>
+                    <a class="J_menuItem" href="colourstyle-tool.html">调色工具介绍</a>
+                </li>
                 <li>
                     <a class="J_menuItem" href="colourstyle.html">色调类型</a>
                 </li>
@@ -159,6 +169,8 @@
         })
     </script>
     <div style="text-align:center;clear:both">
+        <script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+        <script src="/follow.js" type="text/javascript"></script>
     </div>
     <div class="whole">
         <div id="contentContainer" class="trans3d">
@@ -183,7 +195,7 @@
                 <img class="tip" src="../image/t2.jpg" alt="" height="100%"><p id="des1">向左向右滑动，相册向左右翻转</p>
             </div>
             <div class="line">
-                <img class="tip" src="../image/t1.jpg" alt="" height="100%"><p id="des2">从上、下分别往中间缓慢滑动<br>并将鼠标放在照片上<br>照片将放大并缓慢旋转</p>
+                <img class="tip" src="../image/t1.jpg" alt="" height="100%"><p id="des2">从上、下分别往中间缓慢滑动<br>照片将放大并缓慢旋转</p>
             </div>
         </div>
     </div>

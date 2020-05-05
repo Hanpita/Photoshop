@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>色调介绍</title>
-
     <link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-3.3.4.css">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/jquery-kq-nav-left.css">
@@ -23,8 +22,7 @@
 </head>
 
 <body style="overflow-x:hidden;overflow-y:hidden;height: 100%;background-color: black">
-    <ul class="nav-left-container">
-        <div id="course_title">Photoshop<br>基本后期调色</div>
+   <ul class="nav-left-container">
         <li>
             <a href="index.html">
                 <span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span>
@@ -58,6 +56,9 @@
                 <span class="glyphicon glyphicon-menu-right f12 fr" aria-hidden="true"></span>
             </a>
             <ul class="nav-left-container-small">
+				<li>
+                    <a class="J_menuItem" href="colourstyle-tool.html">调色工具介绍</a>
+                </li>
                 <li>
                     <a class="J_menuItem" href="colourstyle.html">色调类型</a>
                 </li>
@@ -87,7 +88,7 @@
         </li>
     </ul>
     <script>
-        $('.nav-left-container').on('click', 'li', function () {
+        $('.nav-left-container').on('click', 'li', function() {
             $(this).find('.glyphicon-menu-right').removeClass('glyphicon-menu-right').addClass('glyphicon-menu-down');
             $(this).addClass('active').children('.nav-left-container-small').slideDown()
 
@@ -95,42 +96,41 @@
             $(this).siblings().find('.glyphicon-menu-down').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-right ');
         })
     </script>
-
-
-    <div class="container" id="subject">
-        <ul>
-            <li>
-                <a href="hongkong.html" title="点击查看港风调色方法">
-                    <img class="one" src="../imgs/1.jpg" />
-                    <div class="info" style="background-color:#900002;position: absolute;top: 0;right: 0;height: 100%;width: 45%;overflow: hidden;color: #FFFFFF;">
-                        <h1>港风</h1>
-                        <p class="p1">1.明暗细节丰富，港风胶片照片会保留更多高光和暗部细节，具有丰富层次和更明显的对比，画面更加“精致细腻”，而人们往往都更喜欢清晰的，具有更多细节的视觉感。<br />2.色彩细腻饱满，在胶片的制造和冲洗过程中会使颜色发生偏移，即“色偏”，另照片呈现的颜色比肉眼所见更加油润饱满。<br />3.胶片的色彩通常并无特定唯一的风格，我们常见的色偏出现在绿色偏青色，亮部偏米黄、红色偏橙色等，这些颜色都给人浓郁复古的感觉。</p>
-                    </div>
-                </a>
-            </li>
-            <li class="big">
-                <a href="" title="点击查看欧美风调色方法">
-                    <img class="two" src="../imgs/02.jpg" />
-                    <div class="info" style="background-color:#292929; position: absolute;top: 0;left: 0;height: 100%;width: 45%;overflow: hidden;color: #FFFFFF;">
-                        <h1>欧美风</h1>
-                        <p class="p2">1.欧美系的摄影色彩的饱和度通常比较高，对比度较高，画面中的明暗对比比较强烈，亮度较低，给人一种艳丽的感觉。<br />2.欧美风格照片的色彩会有一定的偏向，能够给人较为强烈的视觉冲击，很多欧美风格照片都会通过强烈的色彩倾向去传达自己的主观情感。</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="" title="点击查看日系调色方法">
-                    <img class="three" src="../imgs/3.jpg" />
-                    <div class="info" style="background-color:#48A67E;position: absolute;top: 0;right: 0;height: 100%;width: 45%;overflow: hidden;color: #FFFFFF;">
-                        <h1>日系风</h1>
-                        <p class="p1" title="点击查看日系调色方法">1.在色彩方面，在调整图层中用饱和度工具降低饱和度。用曲线调整图层减少对比度，并提高整体亮度，对于过曝或高调区域可下拉曲线，注意是沿着右边输出线下拉。选取拍摄内容时，可留心明度高的色彩，组合成画面。<br />2.可以给照片加入淡淡的蓝色或是少许温暖的黄色，洋红色轻微加入也可有种胶片的色彩感觉，都可用曲线工具.</p>
-                    </div>
-                </a>
-            </li>
-        </ul>
-
-    </div>
-    <script type="text/javascript">
-        function mouseover(e) {
+	
+	<div class="container" id="subject">
+	<ul>
+		<li >
+			<a href="hongkong.html" title="点击查看港风调色方法">
+				<img class="one" src="../imgs/1.jpg" />
+				<div class="info" style="background-color:#900002;position: absolute;top: 0;right: 0;height: 100%;width: 45%;overflow: hidden;color: #FFFFFF;">
+					<h1>港风</h1>
+					<p class="p1" >1.明暗细节丰富，港风胶片照片会保留更多高光和暗部细节，具有丰富层次和更明显的对比，画面更加“精致细腻”，而人们往往都更喜欢清晰的，具有更多细节的视觉感。<br />2.色彩细腻饱满，在胶片的制造和冲洗过程中会使颜色发生偏移，即“色偏”，另照片呈现的颜色比肉眼所见更加油润饱满。<br />3.胶片的色彩通常并无特定唯一的风格，我们常见的色偏出现在绿色偏青色，亮部偏米黄、红色偏橙色等，这些颜色都给人浓郁复古的感觉。</p>
+				</div>
+			</a>
+		</li>
+		<li class="big">
+			<a href="europe.html" title="点击查看欧美风调色方法">
+				<img class="two" src="../imgs/02.jpg" />
+				<div class="info"  style="background-color:#292929; position: absolute;top: 0;left: 0;height: 100%;width: 45%;overflow: hidden;color: #FFFFFF;">
+					<h1>欧美风</h1>
+					<p class="p2" >1.欧美系的摄影色彩的饱和度通常比较高，对比度较高，画面中的明暗对比比较强烈，亮度较低，给人一种艳丽的感觉。<br />2.欧美风格照片的色彩会有一定的偏向，能够给人较为强烈的视觉冲击，很多欧美风格照片都会通过强烈的色彩倾向去传达自己的主观情感。</p>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="japan.html" title="点击查看日系调色方法">
+				<img class="three" src="../imgs/3.jpg"/>
+				<div class="info" style="background-color:#48A67E;position: absolute;top: 0;right: 0;height: 100%;width: 45%;overflow: hidden;color: #FFFFFF;">
+					<h1>日系风</h1>
+					<p class="p1" title="点击查看日系调色方法">1.在色彩方面，在调整图层中用饱和度工具降低饱和度。用曲线调整图层减少对比度，并提高整体亮度，对于过曝或高调区域可下拉曲线，注意是沿着右边输出线下拉。选取拍摄内容时，可留心明度高的色彩，组合成画面。<br />2.可以给照片加入淡淡的蓝色或是少许温暖的黄色，洋红色轻微加入也可有种胶片的色彩感觉，都可用曲线工具.</p>
+				</div>
+			</a>
+		</li>
+	</ul>
+	
+	</div>
+	<script type="text/javascript">
+        function mouseover(e){
             var list = $('#subject li');
             var target = $(e.target).parents('li');
 
@@ -138,13 +138,13 @@
             target.addClass('big');
         }
 
-        (function () {
+        (function(){
             var outer = $('#subject');
             outer.find('li').on('mouseover', mouseover);
         })()
-
+        
     </script>
-
+	
 </body>
 
 </html>

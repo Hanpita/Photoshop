@@ -7,9 +7,13 @@ a{text-decoration:none;}
 a.hover{text-decoration:underline;}
 a:focus {  outline:none;   -moz-outline:none;}
 *:focus { outline: none; }
+@font-face{
+	font-family:"HYZHONGXIUTIJ";
+	src:url("../font/HYZHONGXIUTIJ.TTF")
+}
 .container{
 	position: absolute;
-	width: 96%;
+	width: 98%;
 	height: 100%;
 	right:0;
 	overflow: hidden;
@@ -58,7 +62,7 @@ a:focus {  outline:none;   -moz-outline:none;}
 	letter-spacing:2px;
 	vertical-align: middle;
 	overflow: hidden;
-	font-family: "楷体", "宋体", "幼圆";
+	
 	width: 86%;
 	margin-left: 38px;
 	margin-top: 38px;
@@ -70,7 +74,7 @@ a:focus {  outline:none;   -moz-outline:none;}
 	letter-spacing:2px;
 	vertical-align: middle;
 	overflow: hidden;
-	font-family: "楷体", "宋体", "幼圆";
+	
 	width: 70%;
 	margin-left:80px;
 	margin-top: 38px;
