@@ -14,7 +14,8 @@
             padding: 0;
             margin: 0
         }
-                a:focus {
+
+        a:focus {
             outline: none;
             -moz-outline: none;
         }
@@ -22,6 +23,7 @@
         *:focus {
             outline: none;
         }
+
         body {
             background-color: #080615;
         }
@@ -102,6 +104,36 @@
             /*max-width: 100%;*/
             /*max-height: 100%;*/
         }
+
+        @media screen and (max-width: 1200px) {
+            #title_slide {
+                width: 45%;
+                left:-2.5%;
+            }
+            #text_slide {
+                left: 0.5%;
+                width:39%;
+                box-shadow: #e2dedf 20px 20px;
+            }
+
+            #text {
+                width: 95%;
+            }
+
+            #img {
+                top: 10%;
+            }
+
+            #pic {
+                height: 50vh;
+            }
+        }
+
+        @font-face {
+            font-family: "HYZHONGXIUTIJ";
+            src: url("../font/HYZHONGXIUTIJ.TTF")
+        }
+
 
         #bgm {
             width: 50%;
