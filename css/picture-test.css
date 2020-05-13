@@ -90,33 +90,33 @@ img{
 .a1{
     margin-left: 20px;
 }
-#submit {
-    float: left;
-    margin-bottom: 6px;
-    margin-left: 215px;
-    width: 68px;
-    height: 36px;
-    color: #FFFFFF;
-    font-size: 19px;
-    border: none;
-    background-color: #2a3245;
-    letter-spacing: 2px;
+
+#submit{
+	float: left;
+	margin-bottom: 6px;
+	margin-left:215px;
+	width:68px;
+	height: 36px;
+	color:#FFFFFF;
+	font-size: 19px;
+	border: none;
+	background-color: #2a3245;
+	letter-spacing: 2px;
 }
 
-.answer {
-    float: left;
-    width: 180px;
-    margin-bottom: 6px;
-    margin-left: 162px;
-    height: 36px;
-    color: #FFFFFF;
-    font-size: 17px;
-    border: none;
-    background-color: #2a3245;
-    letter-spacing: 1px;
-    display:none;
+.answer{
+	float: left;
+	width: 180px;
+	margin-bottom: 6px;
+	margin-left:162px;
+	height:36px;
+	color:#FFFFFF;
+	font-size: 17px;
+	border: none;
+	background-color: #2a3245;
+	letter-spacing: 1px;
 }
-.red1,.red2,.red3,.red4,.red5,.red6,.red7,.red8,.red9,.red10{
+.red1,.red2,.red3,.red4,.red5,.red6,.red7,.red8{
 	 color: red;
     font-weight: 400;
     font-size: 20px;

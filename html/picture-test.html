@@ -1,0 +1,288 @@
+﻿<!doctype html>
+<html >
+<head>
+<meta charset="utf-8">
+<title>图片效果测试题</title>
+	<link rel="stylesheet" href="../css/picture-test.css">
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script language="JavaScript" type="text/javascript" src="../js/picture-test.js"></script>
+	
+	<link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-3.3.4.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/jquery-kq-nav-left.css">
+    <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	 <script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+
+</head>
+
+<body>
+	
+	<ul class="nav-left-container">
+        <li>
+            <a href="../index.html">
+                <span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span>
+                <span>首页</span>
+                <span class="glyphicon glyphicon-menu-right f12 fr" aria-hidden="true"></span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="glyphicon glyphicon-calendar f12" aria-hidden="true"></span>
+                <span>构图</span>
+                <span class="glyphicon glyphicon-menu-right f12 fr" aria-hidden="true"></span>
+            </a>
+
+            <ul class="nav-left-container-small">
+                <li>
+                    <a class="J_menuItem" href="composition.html">构图方法</a>
+                </li>
+                <li>
+                    <a class="J_menuItem" href="structure-tool.html">构图工具介绍</a>
+                </li>
+                <li>
+                    <a class="J_menuItem" href="structure-test.html">构图练习</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+                <span class="glyphicon glyphicon-edit f12" aria-hidden="true"></span>
+                <span>调色</span>
+                <span class="glyphicon glyphicon-menu-right f12 fr" aria-hidden="true"></span>
+            </a>
+            <ul class="nav-left-container-small">
+				<li>
+                    <a class="J_menuItem" href="colourstyle-tool.html">调色工具介绍</a>
+                </li>
+                <li>
+                    <a class="J_menuItem" href="colourstyle.html">色调类型</a>
+                </li>
+                <li>
+                    <a class="J_menuItem" href="colourstyle-test.html">调色练习</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+                <span class="glyphicon glyphicon-duplicate f12" aria-hidden="true"></span>
+                <span>测试</span>
+                <span class="glyphicon glyphicon-menu-right f12 fr" aria-hidden="true"></span>
+            </a>
+            <ul class="nav-left-container-small">
+                <li>
+                    <a class="J_menuItem" href="main-test.html">综合理论测试题</a>
+                </li>
+				 <li>
+                    <a class="J_menuItem" href="picture-test.html">图片效果测试题</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="album.html">
+                <span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span>
+                <span>相册</span>
+                <span class="glyphicon glyphicon-menu-right f12 fr" aria-hidden="true"></span>
+            </a>
+        </li>
+    </ul>
+    <script>
+        $('.nav-left-container').on('click', 'li', function() {
+            $(this).find('.glyphicon-menu-right').removeClass('glyphicon-menu-right').addClass('glyphicon-menu-down');
+            $(this).addClass('active').children('.nav-left-container-small').slideDown()
+
+            $(this).siblings().removeClass('active').children('.nav-left-container-small').slideUp()
+            $(this).siblings().find('.glyphicon-menu-down').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-right ');
+        })
+    </script>
+	<div>
+		 <ul class="ul1" name="top">
+			 <h1 align="center" style="font-size: 50px;width: 600px;height:100px;line-height: 100px; ">图片效果测试题</h1>	 
+			 <hr style="width: 96%;border:0;height:4px;margin:0 auto;background-color:#2a3245;">
+			 <div class="container" id="container">
+			 <div style="font-size: 22px;font-weight:bold;width: 100px;height:40px;line-height: 40px;text-align: center;border-radius: 20px;background-color: #080614;color: #b8b7bd">单选题</div>
+                    <li style="margin-top: 10px;">
+                        1.以下(<span class="red1">B</span> )选项是将原图a通过PS色调滑块右移后的效果图<br>
+						<div class="yuantu" style="width:204px;height: 180px;margin-left:140px;">
+						<img src="../imgs/test/sediao/1.jpg" width="200" height="150" ><br>
+						<p style="text-align: center;font-size:16px;">原图a</p>
+						</div>
+                        <input type="radio" name="a1" value="A" class="a1" id="a1" >
+						<span class="span1"><label for="a1">A.
+						<img src="../imgs/test/sediao/low.PNG" width="200" height="150"></label>
+						</span>
+                        <input type="radio" name="a1" value="B" class="a1" id="a2" >
+						<span class="span1"><label for="a2"> B.
+						<img src="../imgs/test/sediao/hight.PNG" width="200" height="150"></label>
+						</span><br><br>
+                        <input type="radio" name="a1" value="C" class="a1" id="a3">
+						<span class="span1"><label for="a3"> C.
+						<img src="../imgs/test/sediao/sewenhight.PNG" width="200" height="150"></label>
+						</span>
+                        <input type="radio" name="a1" value="D" class="a1" id="a4">
+						<span class="span1"><label for="a4"> D.
+						<img src="../imgs/test/sediao/sewenlow.PNG" width="200" height="150"></label><br>
+						</span>
+						<p class="p1" ></p>
+						
+						<div style="width: 522px;">
+                            <span class="red1" style="font-size:16px;">正确答案:B<br>分析：PS色调滑块右移，图片整体呈紫红色，故答案为选项B。色调滑块左移，图片整体呈绿色，故选项A为色调滑块左移效果图。<br>重点：注意区分PS中色调滑块左移和右移所呈现的图片颜色。</span>
+						</div>
+                    </li><br><br>
+                    <li>
+                       2.以下(<span class="red2">C</span> )选项是将原图b的饱和度调低后的效果图<br>
+						<div class="yuantu" style="width:204px;height: 180px;margin-left:140px;">
+						<img src="../imgs/test/baohedu1/1.PNG" width="200" height="150" ><br>
+						<p style="text-align: center;font-size:16px;">原图b</p>
+						</div>
+                        <input type="radio" name="a2" value="A" class="a1" id="b1" >
+						<span class="span1"><label for="b1">A.
+						<img src="../imgs/test/baohedu1/hight.png" width="200" height="150"></label>
+						</span>
+                        <input type="radio" name="a2" value="B" class="a1" id="b2" >
+						<span class="span1"><label for="b2"> B.
+						<img src="../imgs/test/baohedu1/baoguanghight.png" width="200" height="150"></label>
+						</span><br><br>
+                        <input type="radio" name="a2" value="C" class="a1" id="b3">
+						<span class="span1"><label for="b3"> C.
+						<img src="../imgs/test/baohedu1/low.png" width="200" height="150"></label>
+						</span>
+                        <input type="radio" name="a2" value="D" class="a1" id="b4">
+						<span class="span1"><label for="b4"> D.
+						<img src="../imgs/test/baohedu1/sediaolow.png" width="200" height="150"></label><br>
+						</span>
+						<p class="p2"></p>
+						<div style="width: 515px;">
+                            <span class="red2" style="font-size:16px;">正确答案:C<br>分析：饱和度指图像颜色的鲜艳程度,饱和度调低则颜色越暗淡，故答案为选项C。饱和度调高则颜色越鲜艳，故选项A为饱和度调高效果图，选项B为曝光度调高效果图，选项D为色调调低效果图。<br>重点：注意掌握PS中饱和度对图片颜色的影响。</span>
+						</div>
+                    </li><br><br>
+					 <li >
+                       3.以下(<span class="red3">A</span> )选项是将原图c的曝光调高后的效果图<br>
+						<div class="yuantu" style="width:204px;height: 180px;margin-left:140px;">
+						<img src="../imgs/test/baoguang/1.png" width="200" height="150" ><br>
+						<p style="text-align: center;font-size:16px;">原图c</p>
+						</div>
+                        <input type="radio" name="a3" value="A" class="a1" id="c1" >
+						<span class="span1"><label for="c1">A.
+						<img src="../imgs/test/baoguang/hight.png" width="200" height="150"></label>
+						</span>
+                        <input type="radio" name="a3" value="B" class="a1" id="c2" >
+						<span class="span1"><label for="c2"> B.
+						<img src="../imgs/test/baoguang/low.png" width="200" height="150"></label>
+						</span><br><br>
+                        <input type="radio" name="a3" value="C" class="a1" id="c3">
+						<span class="span1"><label for="c3"> C.
+						<img src="../imgs/test/baoguang/contrasthight.png" width="200" height="150"></label>
+						</span>
+                        <input type="radio" name="a3" value="D" class="a1" id="c4">
+						<span class="span1"><label for="c4"> D.
+						<img src="../imgs/test/baoguang/contrastlow.png" width="200" height="150"></label><br>
+						</span>
+						 <p class="p3"></p>
+						<div style="width: 510px;">
+                            <span class="red3" style="font-size:16px;">正确答案:A<br>分析：曝光调高即曝光滑块右移，将图片整体亮度调高，故答案为A选项。曝光调低即图片整体亮度变暗，故选项B为曝光调低效果图。选项C为对比度调高效果图，选项D为对比度调低效果图。<br>重点：注意掌握PS中曝光度对于图片亮度的影响。</span>
+						</div>
+                    </li><br><br>
+                    <li>
+                        4.以下(<span class="red4">A</span> )选项是将原图d的对比度调高后的效果图<br>
+						<div class="yuantu" style="width:204px;height: 180px;margin-left:140px;">
+						<img src="../imgs/test/duibidu/1.PNG" width="200" height="150" ><br>
+						<p style="text-align: center;font-size:16px;">原图d</p>
+						</div>
+                        <input type="radio" name="a4" value="A" class="a1" id="d1" >
+						<span class="span1"><label for="d1">A.
+						<img src="../imgs/test/duibidu/hight.png" width="200" height="150"></label>
+						</span>
+                        <input type="radio" name="a4" value="B" class="a1" id="d2" >
+						<span class="span1"><label for="d2"> B.
+						<img src="../imgs/test/duibidu/baoguanghight.png" width="200" height="150"></label>
+						</span><br><br>
+                        <input type="radio" name="a4" value="C" class="a1" id="d3">
+						<span class="span1"><label for="d3"> C.
+						<img src="../imgs/test/duibidu/sewenlow.png" width="200" height="150"></label>
+						</span>
+                        <input type="radio" name="a4" value="D" class="a1" id="d4">
+						<span class="span1"><label for="d4"> D.
+						<img src="../imgs/test/duibidu/low.png" width="200" height="150"></label><br>
+						</span>
+						<p class="p4"></p>
+						<div style="width: 510px;">
+                            <span class="red4" style="font-size:16px;">正确答案:A<br>分析：对比度指的是图像中明暗区域最亮的白和最暗的黑之间不同亮度层级的测量,是明度和暗度之间的反差，对比度越高明暗差异越大，故答案为A选项。对比度越低明暗差异越小，故选项D为对比度调低效果图。选项B为曝光调高效果图，选项C为色温调低效果图。<br>重点：注意观察对比度对图像中最亮的白和最暗的黑之间不同亮度的影响。</span>
+						</div>
+                    </li><br><br>
+                    
+                   <li>
+                        5.通过控制(<span class="red5">C</span> )滑块可将图e效果调整为图f效果。<br>
+					   <div class="yuantu1" style="width:420px;height: 180px;margin-left:40px;">
+						<img src="../imgs/test/baohedu2/low.png" width="200" height="150" style="float: left;">
+						<img src="../imgs/test/baohedu2/1.PNG" width="200" height="150" style="margin-left:18px"><br>
+						   <p style="text-align: center;font-size:16px;">图e<span style="margin-left: 200px;">图f</span></p>
+						</div>
+                       <input type="radio" name="a5" value="A" class="a1"><span class="span1"> A.色调</span>
+                        <input type="radio" name="a5" value="B" class="a1" style="margin-left:170px"><span class="span1"> B.曝光</span><br>
+                        <input type="radio" name="a5" value="C" class="a1"><span class="span1"> C.饱和度</span>
+                        <input type="radio" name="a5" value="D" class="a1" style="margin-left:150px"><span class="span1"> D.对比度</span>
+					   <p class="p5"></p>
+					   <div style="width: 510px;">
+                           <span class="red5" style="font-size:16px;">正确答案:C<br>分析：饱和度指图像颜色的鲜艳程度,图e颜色暗淡，图f颜色更艳丽，故答案为选项C。</span>
+						</div>
+                    </li><br><br>
+			 
+				 <li>
+                        6.通过控制(<span class="red6">A</span> )滑块可将图m效果调整为图n效果。<br>
+					   <div class="yuantu1" style="width:420px;height: 180px;margin-left:40px;">
+						<img src="../imgs/test/ruihua/1.PNG" width="200" height="150" style="float: left;border:1px dashed #FFFFFF">
+						<img src="../imgs/test/ruihua/ruihua.PNG" width="200" height="150" style="margin-left:18px;border:1px dashed #FFFFFF"><br>
+						   <p style="text-align: center;font-size:16px;">图m<span style="margin-left: 200px;">图n</span></p>
+						</div>
+                       <input type="radio" name="a6" value="A" class="a1"><span class="span1"> A.锐化</span>
+                        <input type="radio" name="a6" value="B" class="a1" style="margin-left:150px"><span class="span1"> B.对比度</span><br>
+                        <input type="radio" name="a6" value="C" class="a1"><span class="span1"> C.色调</span>
+                        <input type="radio" name="a6" value="D" class="a1" style="margin-left:150px"><span class="span1"> D.曝光</span>
+					 <p class="p6"></p>
+					   <div style="width: 510px;">
+						<span class="red6" style="font-size:16px;">正确答案:A<br>分析：图m与图n最明显的区别是后者中边缘轮廓更加明显清晰，锐化工具可以增加分割画面区域的边缘线周边的对比度，从而达到刻痕的效果，使内容更加锐利，故答案为选项A。<br>重点：锐化工具对边缘轮廓影响最大。</span>
+						</div>
+                    </li><br><br>
+				 
+				  <li>
+                        7.通过控制(<span class="red7">B</span> )滑块可将图g效果调整为图h效果。<br>
+					   <div class="yuantu1" style="width:420px;height: 180px;margin-left:40px;">
+						<img src="../imgs/test/baoguang2/1.PNG" width="200" height="150" style="float: left;">
+						<img src="../imgs/test/baoguang2/low.png" width="200" height="150" style="margin-left:18px;"><br>
+						   <p style="text-align: center;font-size:16px;">图g<span style="margin-left: 200px;">图h</span></p>
+						</div>
+                       <input type="radio" name="a7" value="A" class="a1"><span class="span1"> A.锐化</span>
+                        <input type="radio" name="a7" value="B" class="a1" style="margin-left:150px"><span class="span1"> B.曝光</span><br>
+                        <input type="radio" name="a7" value="C" class="a1"><span class="span1"> C.色调</span>
+                        <input type="radio" name="a7" value="D" class="a1" style="margin-left:150px"><span class="span1"> D.对比度</span>
+					 <p class="p7"></p>
+					   <div style="width: 510px;">
+                           <span class="red7" style="font-size:16px;">正确答案:B<br>分析：图g与图h最明显的区别是后者中亮度偏低，整体暗淡，将曝光滑块左移可以降低图片亮度，故答案为选项B。<br>重点：锐化工具对边缘轮廓影响最大。</span>
+						</div>
+                    </li><br><br>
+				 
+				  <li>
+                        8.通过使用(<span class="red8">A</span> )工具可将图k效果调整为图p效果。<br>
+					   <div class="yuantu1" style="width:420px;height: 180px;margin-left:40px;">
+						<img src="../imgs/test/goutu/1.PNG" width="200" height="150" style="float: left;">
+						<img src="../imgs/test/goutu/sanfen.png" width="200" height="150" style="margin-left:18px;"><br>
+						   <p style="text-align: center;font-size:16px;">图k<span style="margin-left: 200px;">图p</span></p>
+						</div>
+                       <input type="radio" name="a8" value="A" class="a1"><span class="span1"> A.裁剪</span>
+                        <input type="radio" name="a8" value="B" class="a1" style="margin-left:150px"><span class="span1"> B.色调</span><br>
+                        <input type="radio" name="a8" value="C" class="a1"><span class="span1"> C.曝光</span>
+                        <input type="radio" name="a8" value="D" class="a1" style="margin-left:150px"><span class="span1"> D.对比度</span>
+					 <p class="p8"></p>
+					   <div style="width: 510px;">
+                           <span class="red8" style="font-size:16px;">正确答案:A<br>分析：图k中人物位于图片中心，图p中人物位于图片右下方，符合三分法构图，在PS中可使用裁剪工具将图片调整为三分法构图，故答案为选项A。<br>重点：锐化工具对边缘轮廓影响最大。</span>
+						</div>
+                    </li><br><br>
+				 <button class="button button-highlight button-pill button-large" id="submit">提交</button>
+				<button class="answer" id="answerkey" style="display:none;">查看全部答案与解析</button>
+			 </div>
+			</ul>	
+	</div>
+</body>
+</html>
+

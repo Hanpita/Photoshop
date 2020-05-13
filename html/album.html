@@ -147,7 +147,10 @@
             </a>
             <ul class="nav-left-container-small">
                 <li>
-                    <a class="J_menuItem" href="main-test.html">理论选择题</a>
+                    <a class="J_menuItem" href="main-test.html">综合理论测试题</a>
+                </li>
+				 <li>
+                    <a class="J_menuItem" href="picture-test.html">图片效果测试题</a>
                 </li>
             </ul>
         </li>
@@ -160,7 +163,7 @@
         </li>
     </ul>
     <script>
-        $('.nav-left-container').on('click', 'li', function () {
+        $('.nav-left-container').on('click', 'li', function() {
             $(this).find('.glyphicon-menu-right').removeClass('glyphicon-menu-right').addClass('glyphicon-menu-down');
             $(this).addClass('active').children('.nav-left-container-small').slideDown()
 

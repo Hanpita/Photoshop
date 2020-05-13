@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 body,ul,h2,h3,h4,form,input,textarea,select{padding:0;margin:0;}
 li{list-style:none;}
@@ -120,21 +120,43 @@ img{
     margin-left: 20px;
 }
 
-#submit{
-	float: left;
-	bottom: 10px;
-	margin-left:34%;
-	margin-top: 520px;
-	border-radius: 16px;
-	
+#submit {
+    float: left;
+    bottom: 10px;
+    margin-left: 45%;
+    margin-top: 520px;
+    border-radius: 16px;
+    width: 90px;
+    height: 36px;
+    color: #000000;
+    font-size: 17px;
+    border: none;
+    transition:ease 0.5s;
 }
-.answer{
-	float: left;
-	bottom: 10px;
-	margin-left: 130px;
-	margin-top: 520px;
-	border-radius: 16px;
+.answer {
+    float: left;
+    bottom: 10px;
+    margin-left: 42%;
+    margin-top: 520px;
+    border-radius: 16px;
+    width: 150px;
+    height: 36px;
+    color: #000000;
+    font-size: 17px;
+    border: none;
+    display: none;
+    transition: ease 0.5s;
 }
+#submit:hover {
+    color: #EBEBEB;
+    background-color: #1f4f77;
+    opacity:1;
+}
+.answer:hover {
+    color: #EBEBEB;
+    background-color: #1f4f77;
+}
+
 .red{
 	display: none;
 }
